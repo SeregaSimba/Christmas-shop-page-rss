@@ -1,0 +1,1 @@
+# Christmas-shop-page-rss
