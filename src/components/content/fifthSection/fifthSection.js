@@ -1,4 +1,5 @@
 import { createEll, addClass } from "../../../utilities/createFunc";
+import { AddCatalog } from "../catalig/addCatalog";
 
 function FifthSection() {
   const main = document.getElementById("main-pag");
@@ -33,63 +34,11 @@ function FifthSection() {
 
   const sectionContainerBest = createEll("section");
   addClass(sectionContainerBest, "best-Gifts-conteiner");
+  sectionContainerBest.setAttribute("id", "bestGiftsConteiner");
   sectionBestGift.appendChild(sectionContainerBest);
 
   // место под карточки товаров
+  AddCatalog();
 }
 
 export { FifthSection };
-
-{
-  /* <section class="best-Gifts conteiner" id="best-Gifts">
-
-        <div class="best-Gifts2">//
-
-          <div class="best-Gifts-conteiner"> //
-
-            <div class="best-img">
-              <div>
-                <img src="img/image.svg" alt="image1" />
-              </div>
-              <div class="best-h">
-                <h4 class="best-h4 for-work">FOR WORK</h4>
-                <h3 class="best-h3">CONSOLE.LOG GURU</h3>
-              </div>
-            </div>
-
-            <div class="best-img">
-              <div>
-                <img src="img/image-2.svg" alt="image2" />
-              </div>
-              <div class="best-h">
-                <h4 class="best-h4 for-health">FOR HEALTH</h4>
-                <h3 class="best-h3">HYDRATION BOT</h3>
-              </div>
-            </div>
-
-            <div class="best-img">
-              <div>
-                <img src="img/image.svg" alt="image3" />
-              </div>
-              <div class="best-h">
-                <h4 class="best-h4 for-work">FOR WORK</h4>
-                <h3 class="best-h3">MERGE MASTER</h3>
-              </div>
-            </div>
-
-            <div class="best-img">
-              <div>
-                <img src="img/image-3.svg" alt="image4" />
-              </div>
-              <div class="best-h">
-                <h4 class="best-h4 for-harmony">FOR HARMONY</h4>
-                <h3 class="best-h3">SPONTANEOUS CODING <br />PHILOSOPHER</h3>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </section> */
-}
