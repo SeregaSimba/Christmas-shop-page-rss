@@ -1,7 +1,7 @@
 import { createEll, addClass } from "../../../utilities/createFunc";
 
 function FourthSection() {
-  const main = document.getElementById("main-pag");
+  const main = document.getElementById("globalMain");
 
   const sectionCatalog = createEll("section");
   addClass(sectionCatalog, "bar-window-menu2");

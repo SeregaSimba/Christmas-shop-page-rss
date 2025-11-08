@@ -2,7 +2,7 @@ import { createEll, addClass } from "../../../utilities/createFunc";
 import { AddCatalog } from "../catalig/addCatalog";
 
 function FifthSection() {
-  const main = document.getElementById("main-pag");
+  const main = document.getElementById("globalMain");
 
   const sectionBest = createEll("section");
   addClass(sectionBest, "best-Gifts");

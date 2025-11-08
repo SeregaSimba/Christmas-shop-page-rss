@@ -1,7 +1,7 @@
 import { createEll, addClass } from "../../../utilities/createFunc";
 
 function FirstSection() {
-  const main = document.getElementById("main-pag");
+  const main = document.getElementById("globalMain");
   const firstSection = createEll("section");
   addClass(firstSection, "hero");
   addClass(firstSection, "conteiner");

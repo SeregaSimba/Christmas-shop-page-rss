@@ -1,7 +1,7 @@
 import { createEll, addClass } from "../../../utilities/createFunc";
 
 function SixthSection() {
-  const main = document.getElementById("main-pag");
+  const main = document.getElementById("globalMain");
 
   const sectionCTA = createEll("section");
   addClass(sectionCTA, "CTA");

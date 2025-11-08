@@ -1,7 +1,7 @@
 import { createEll, addClass } from "../../../utilities/createFunc";
 
 function ThirdSection() {
-  const main = document.getElementById("main-pag");
+  const main = document.getElementById("globalMain");
 
   const thirdSection = createEll("section");
   addClass(thirdSection, "slider");
