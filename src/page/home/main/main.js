@@ -6,10 +6,16 @@ import { FifthSection } from "../fifthSection/fifthSection";
 import { SixthSection } from "../sixthSection/sixthSection";
 import { createEll } from "../../../components/header/header";
 import { ShopSection } from "../../shopCatalog/shopSection";
+import { AboutPage } from "../../about/about";
+import { BestGiftsPage } from "../../bestGifts/bestGifts";
+import { ContactsPage } from "../../contacts/contacts";
 
 function Main() {
   SectionMainPag();
   ShopSection();
+  AboutPage();
+  BestGiftsPage();
+  ContactsPage();
 }
 
 function SectionMainPag() {

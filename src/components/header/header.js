@@ -1,5 +1,10 @@
 import { createEll, addClass } from "../../utilities/createFunc";
-import { ButtonHeaderGifts } from "../../utilities/buttonHeader";
+import {
+  ButtonHeaderGifts,
+  ButtonHeaderAbout,
+  ButtonHeaderBestGifts,
+  ButtonHeaderContacts,
+} from "../../utilities/buttonHeader";
 
 function Header() {
   const header = document.getElementById("header");
@@ -86,22 +91,22 @@ function Header() {
   aLiHeader1.addEventListener("click", ButtonHeaderGifts);
   li1.appendChild(aLiHeader1);
 
-  const aLiHeader2 = createEll("a");
+  const aLiHeader2 = createEll("button");
   addClass(aLiHeader2, "li-a-header");
-  aLiHeader2.setAttribute("href", "index.html#about");
   aLiHeader2.innerText = "ABOUT";
+  aLiHeader2.addEventListener("click", ButtonHeaderAbout);
   li2.appendChild(aLiHeader2);
 
-  const aLiHeader3 = createEll("a");
+  const aLiHeader3 = createEll("button");
   addClass(aLiHeader3, "li-a-header");
-  aLiHeader3.setAttribute("href", "index.html#best-Gifts");
   aLiHeader3.innerText = "BEST";
+  aLiHeader3.addEventListener("click", ButtonHeaderBestGifts);
   li3.appendChild(aLiHeader3);
 
-  const aLiHeader4 = createEll("a");
+  const aLiHeader4 = createEll("button");
   addClass(aLiHeader4, "li-a-header");
-  aLiHeader4.setAttribute("href", "#contacts-footer");
   aLiHeader4.innerText = "CONTACTS";
+  aLiHeader4.addEventListener("click", ButtonHeaderContacts);
   li4.appendChild(aLiHeader4);
 }
 

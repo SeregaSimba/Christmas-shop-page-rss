@@ -1,4 +1,5 @@
 import { createEll, addClass } from "../../../utilities/createFunc";
+import { ButtonHeaderGifts } from "../../../utilities/buttonHeader";
 
 function SixthSection() {
   const main = document.getElementById("globalMain");
@@ -28,16 +29,12 @@ function SixthSection() {
   const articleTame = createEll("article");
   sectionButtonTime.appendChild(articleTame);
 
-  const formButtonTame = createEll("form");
-  formButtonTame.setAttribute("action", "index-thu.html");
-  formButtonTame.setAttribute("target", "_blank");
-  articleTame.appendChild(formButtonTame);
-
   const buttonTame = createEll("button");
   addClass(buttonTame, "sta-button");
   buttonTame.setAttribute("id", "but2");
   buttonTame.innerText = "EXPLORE MAGICAL GIFTS";
-  formButtonTame.appendChild(buttonTame);
+  buttonTame.addEventListener("click", ButtonHeaderGifts);
+  articleTame.appendChild(buttonTame);
 
   const sectionTameContainer = createEll("section");
   sectionStaContainer.appendChild(sectionTameContainer);

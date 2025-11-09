@@ -1,4 +1,7 @@
 import { createEll, addClass } from "../../utilities/createFunc";
+import { ForHarmony } from "../forHarmony/forHarmony";
+import { ForHealth } from "../forHealth/forHealth";
+import { ForWork } from "../forWork/forWork";
 import { ShopSectionTitle } from "./shopContent/shopSection1";
 import { CreateItemsShop } from "./shopContent/shopSection2";
 
@@ -25,6 +28,9 @@ function ShopSection() {
 
   ShopSectionTitle();
   CreateItemsShop();
+  ForWork();
+  ForHealth();
+  ForHarmony();
 }
 
 export { ShopSection };
