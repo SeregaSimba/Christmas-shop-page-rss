@@ -8,12 +8,6 @@ function CreateItemsShop() {
     "img/image-2.svg",
     "shopItems"
   );
-  CreateCatalog(
-    "FOR HARMONY",
-    "Bug Acceptance Guru",
-    "img/image-3.svg",
-    "shopItems"
-  );
   CreateCatalog("FOR WORK", "BUG MAGNET", "img/image.svg", "shopItems");
   CreateCatalog("FOR HEALTH", "Step Master", "img/image-2.svg", "shopItems");
   CreateCatalog("FOR HARMONY", "Error Laugher", "img/image-3.svg", "shopItems");
@@ -29,8 +23,6 @@ function CreateItemsShop() {
   CreateCatalog("FOR HEALTH", "Healthy Sacker", "img/image-2.svg", "shopItems");
   CreateCatalog("FOR HARMONY", "Pause Master", "img/image-3.svg", "shopItems");
 
-  CreateCatalog("FOR WORK", "BUG MAGNET", "img/image.svg", "shopItems");
-  CreateCatalog("FOR HEALTH", "Step Master", "img/image-2.svg", "shopItems");
   CreateCatalog("FOR HARMONY", "Joy Charger", "img/image-3.svg", "shopItems");
   CreateCatalog("FOR WORK", "Merge Master", "img/image.svg", "shopItems");
   CreateCatalog("FOR HEALTH", "Snack Resister", "img/image-2.svg", "shopItems");
@@ -52,9 +44,6 @@ function CreateItemsShop() {
   );
   CreateCatalog("FOR HARMONY", "Coder Healer", "img/image-3.svg", "shopItems");
 
-  CreateCatalog("FOR WORK", "Merge Master", "img/image.svg", "shopItems");
-  CreateCatalog("FOR HEALTH", "Snack Resister", "img/image-2.svg", "shopItems");
-  CreateCatalog("FOR HARMONY", "Error Laugher", "img/image-3.svg", "shopItems");
   CreateCatalog("FOR WORK", "Shortcut Cheater", "img/image.svg", "shopItems");
   CreateCatalog("FOR HEALTH", "Hydration Bot", "img/image-2.svg", "shopItems");
   CreateCatalog(
@@ -85,14 +74,6 @@ function CreateItemsShop() {
     "shopItems"
   );
 
-  CreateCatalog("FOR WORK", "Shortcut Cheater", "img/image.svg", "shopItems");
-  CreateCatalog("FOR HEALTH", "Hydration Bot", "img/image-2.svg", "shopItems");
-  CreateCatalog(
-    "FOR HARMONY",
-    "Spontaneous Coding Philosopher",
-    "img/image-3.svg",
-    "shopItems"
-  );
   CreateCatalog("FOR WORK", "Async Tamer", "img/image.svg", "shopItems");
   CreateCatalog("FOR HEALTH", "Sleep Overlord", "img/image-2.svg", "shopItems");
   CreateCatalog("FOR HARMONY", "Deadline Sage", "img/image-3.svg", "shopItems");
