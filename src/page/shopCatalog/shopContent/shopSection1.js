@@ -1,4 +1,4 @@
-import { createEll, addClass } from "../../../../utilities/createFunc";
+import { createEll, addClass } from "../../../utilities/createFunc";
 
 function ShopSectionTitle() {
   const contentSection = document.getElementById("contentShop");

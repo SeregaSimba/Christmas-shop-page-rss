@@ -1,4 +1,5 @@
 import { createEll, addClass } from "../../../utilities/createFunc";
+import { ButtonHeaderGifts } from "../../../utilities/buttonHeader";
 
 function FirstSection() {
   const main = document.getElementById("globalMain");
@@ -32,15 +33,11 @@ function FirstSection() {
   addClass(articleButton, "button");
   heroSection.appendChild(articleButton);
 
-  const formHeroButton = createEll("form");
-  formHeroButton.setAttribute("action", "index-thu.html");
-  formHeroButton.setAttribute("target", "_blank");
-  articleButton.appendChild(formHeroButton);
-
   const buttonHero = createEll("button");
   buttonHero.setAttribute("id", "button");
   buttonHero.innerText = "EXPLORE MAGICAL GIFTS";
-  formHeroButton.appendChild(buttonHero);
+  buttonHero.addEventListener("click", ButtonHeaderGifts);
+  articleButton.appendChild(buttonHero);
 
   const articleTextHero = createEll("article");
   addClass(articleTextHero, "size-conteiner");

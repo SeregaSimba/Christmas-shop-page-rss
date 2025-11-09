@@ -1,5 +1,5 @@
 import { createEll, addClass } from "../../../utilities/createFunc";
-import { AddCatalog } from "../catalig/addCatalog";
+import { AddCatalog } from "../../../components/content/catalig/addCatalog";
 
 function FifthSection() {
   const main = document.getElementById("globalMain");

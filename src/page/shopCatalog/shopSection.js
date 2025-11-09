@@ -1,4 +1,4 @@
-import { createEll, addClass } from "../../../utilities/createFunc";
+import { createEll, addClass } from "../../utilities/createFunc";
 import { ShopSectionTitle } from "./shopContent/shopSection1";
 import { CreateItemsShop } from "./shopContent/shopSection2";
 
@@ -10,7 +10,8 @@ function ShopSection() {
   addClass(shopSection, "conteiner-best");
   addClass(shopSection, "hero2");
   addClass(shopSection, "conteiner3");
-  shopSection.setAttribute("id", "best-Gifts");
+  shopSection.setAttribute("id", "bestGifts");
+  shopSection.style.display = "none";
   main.appendChild(shopSection);
 
   const sectionShopContainer = createEll("section");

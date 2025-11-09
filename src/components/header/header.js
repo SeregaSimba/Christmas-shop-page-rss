@@ -1,4 +1,5 @@
 import { createEll, addClass } from "../../utilities/createFunc";
+import { ButtonHeaderGifts } from "../../utilities/buttonHeader";
 
 function Header() {
   const header = document.getElementById("header");
@@ -79,10 +80,10 @@ function Header() {
   addClass(li4, "li-header");
   ulHeaderMenu.append(li1, li2, li3, li4);
 
-  const aLiHeader1 = createEll("a");
+  const aLiHeader1 = createEll("button");
   addClass(aLiHeader1, "li-a-header");
-  aLiHeader1.setAttribute("href", "index-thu.html");
   aLiHeader1.innerText = "GIFTS";
+  aLiHeader1.addEventListener("click", ButtonHeaderGifts);
   li1.appendChild(aLiHeader1);
 
   const aLiHeader2 = createEll("a");

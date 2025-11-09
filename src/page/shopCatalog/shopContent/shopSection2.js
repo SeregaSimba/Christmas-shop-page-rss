@@ -1,5 +1,4 @@
-import { createEll, addClass } from "../../../../utilities/createFunc";
-import { CreateCatalog } from "../../../../utilities/createItemCatalog";
+import { CreateCatalog } from "../../../utilities/createItemCatalog";
 
 function CreateItemsShop() {
   CreateCatalog("FOR WORK", "CONSOLE.LOG GURU", "img/image.svg", "shopItems");
