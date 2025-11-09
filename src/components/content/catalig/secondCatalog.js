@@ -1,20 +1,25 @@
-// 1: CreateCatalog("FOR HEALTH", "Posture Levitation", 'img/image-2.svg');
-// 2: CreateCatalog("FOR HEALTH", "Step Master", "img/image-2.svg");
-// 3: CreateCatalog("FOR HEALTH", "Snack Resister", "img/image-2.svg");
-// 4: CreateCatalog("FOR HEALTH", "Hydration Bot", "img/image-2.svg");
-// 5: CreateCatalog("FOR HEALTH", "Sleep Overlord", "img/image-2.svg");
-// 6: CreateCatalog("FOR HEALTH", "Break Guru", "img/image-2.svg");
-// 7: CreateCatalog("FOR HEALTH", "Eye Protector", "img/image-2.svg");
-// 8: CreateCatalog("FOR HEALTH", "Stress Dodger", "img/image-2.svg");
-// 9: CreateCatalog("FOR HEALTH", "Yoga Coder", "img/image-2.svg");
-// 10: CreateCatalog("FOR HEALTH", "Healthy Sacker", "img/image-2.svg");
-// 11: CreateCatalog("FOR HEALTH", "Chair Exerciser", "img/image-2.svg");
-// 12: CreateCatalog("FOR HEALTH", "Caffeine Filter", "img/image-2.svg");
+// 1: CreateCatalog("FOR HEALTH", "Posture Levitation", 'img/image-2.svg', '');
+// 2: CreateCatalog("FOR HEALTH", "Step Master", "img/image-2.svg", '');
+// 3: CreateCatalog("FOR HEALTH", "Snack Resister", "img/image-2.svg", '');
+// 4: CreateCatalog("FOR HEALTH", "Hydration Bot", "img/image-2.svg", '');
+// 5: CreateCatalog("FOR HEALTH", "Sleep Overlord", "img/image-2.svg", '');
+// 6: CreateCatalog("FOR HEALTH", "Break Guru", "img/image-2.svg", '');
+// 7: CreateCatalog("FOR HEALTH", "Eye Protector", "img/image-2.svg", '');
+// 8: CreateCatalog("FOR HEALTH", "Stress Dodger", "img/image-2.svg", '');
+// 9: CreateCatalog("FOR HEALTH", "Yoga Coder", "img/image-2.svg", '');
+// 10: CreateCatalog("FOR HEALTH", "Healthy Sacker", "img/image-2.svg", '');
+// 11: CreateCatalog("FOR HEALTH", "Chair Exerciser", "img/image-2.svg", '');
+// 12: CreateCatalog("FOR HEALTH", "Caffeine Filter", "img/image-2.svg", '');
 
 import { CreateCatalog } from "../../../utilities/createItemCatalog";
 
 function CreateCatalogSection2() {
-  CreateCatalog("FOR HEALTH", "Posture Levitation", "img/image-2.svg");
+  CreateCatalog(
+    "FOR HEALTH",
+    "Posture Levitation",
+    "img/image-2.svg",
+    "bestGiftsConteiner"
+  );
 }
 
 export { CreateCatalogSection2 };

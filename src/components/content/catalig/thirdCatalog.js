@@ -1,20 +1,25 @@
-// 1: CreateCatalog("FOR HARMONY", "Joy Charger", 'img/image-3.svg');
-// 2: CreateCatalog("FOR HARMONY", "Error Laugher", "img/image-3.svg");
-// 3: CreateCatalog("FOR HARMONY", "Bug Acceptance Guru", "img/image-3.svg");
-// 4: CreateCatalog("FOR HARMONY", "Spontaneous Coding Philosopher", "img/image-3.svg");
-// 5: CreateCatalog("FOR HARMONY", "Deadline Sage", "img/image-3.svg");
-// 6: CreateCatalog("FOR HARMONY", "Inspiration Maestro", "img/image-3.svg");
-// 7: CreateCatalog("FOR HARMONY", "Peace Keeper", "img/image-3.svg");
-// 8: CreateCatalog("FOR HARMONY", "Empathy Guru", "img/image-3.svg");
-// 9: CreateCatalog("FOR HARMONY", "Laughter Generator", "img/image-3.svg");
-// 10: CreateCatalog("FOR HARMONY", "Pause Master", "img/image-3.svg");
-// 11: CreateCatalog("FOR HARMONY", "Coder Healer", "img/image-3.svg");
-// 12: CreateCatalog("FOR HARMONY", "Music Code Curator", "img/image-3.svg");
+// 1: CreateCatalog("FOR HARMONY", "Joy Charger", 'img/image-3.svg', '');
+// 2: CreateCatalog("FOR HARMONY", "Error Laugher", "img/image-3.svg", '');
+// 3: CreateCatalog("FOR HARMONY", "Bug Acceptance Guru", "img/image-3.svg", '');
+// 4: CreateCatalog("FOR HARMONY", "Spontaneous Coding Philosopher", "img/image-3.svg", '');
+// 5: CreateCatalog("FOR HARMONY", "Deadline Sage", "img/image-3.svg", '');
+// 6: CreateCatalog("FOR HARMONY", "Inspiration Maestro", "img/image-3.svg", '');
+// 7: CreateCatalog("FOR HARMONY", "Peace Keeper", "img/image-3.svg", '');
+// 8: CreateCatalog("FOR HARMONY", "Empathy Guru", "img/image-3.svg", '');
+// 9: CreateCatalog("FOR HARMONY", "Laughter Generator", "img/image-3.svg", '');
+// 10: CreateCatalog("FOR HARMONY", "Pause Master", "img/image-3.svg", '');
+// 11: CreateCatalog("FOR HARMONY", "Coder Healer", "img/image-3.svg", '');
+// 12: CreateCatalog("FOR HARMONY", "Music Code Curator", "img/image-3.svg", '');
 
 import { CreateCatalog } from "../../../utilities/createItemCatalog";
 
 function CreateCatalogSection3() {
-  CreateCatalog("FOR HARMONY", "Joy Charger", "img/image-3.svg");
+  CreateCatalog(
+    "FOR HARMONY",
+    "Joy Charger",
+    "img/image-3.svg",
+    "bestGiftsConteiner"
+  );
 }
 
 export { CreateCatalogSection3 };

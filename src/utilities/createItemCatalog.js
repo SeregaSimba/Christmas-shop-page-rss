@@ -1,7 +1,7 @@
 import { createEll, addClass } from "../utilities/createFunc";
 
-function CreateCatalog(text, text2, srcImg) {
-  const containerCatalog = document.getElementById("bestGiftsConteiner");
+function CreateCatalog(text, text2, srcImg, id) {
+  const containerCatalog = document.getElementById(id);
 
   const sectionItem = createEll("section");
   addClass(sectionItem, "best-img");

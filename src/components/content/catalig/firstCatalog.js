@@ -1,20 +1,25 @@
-// 1: CreateCatalog("FOR WORK", "CONSOLE.LOG GURU", 'img/image.svg');
-// 2: CreateCatalog("FOR WORK", "BUG MAGNET", "img/image.svg");
-// 3: CreateCatalog("FOR WORK", "Merge Master", "img/image.svg");
-// 4: CreateCatalog("FOR WORK", "Shortcut Cheater", "img/image.svg");
-// 5: CreateCatalog("FOR WORK", "Async Tamer", "img/image.svg");
-// 6: CreateCatalog("FOR WORK", "CSS Tamer", "img/image.svg");
-// 7: CreateCatalog("FOR WORK", "Time Hacker", "img/image.svg");
-// 8: CreateCatalog("FOR WORK", "Layout Master", "img/image.svg");
-// 9: CreateCatalog("FOR WORK", "Documentation Whisperer", "img/image.svg");
-// 10: CreateCatalog("FOR WORK", "Feedback Master", "img/image.svg");
-// 11: CreateCatalog("FOR WORK", "Code Minimalist", "img/image.svg");
-// 12: CreateCatalog("FOR WORK", "Pixel-Perfect Magician", "img/image.svg");
+// 1: CreateCatalog("FOR WORK", "CONSOLE.LOG GURU", 'img/image.svg', '');
+// 2: CreateCatalog("FOR WORK", "BUG MAGNET", "img/image.svg", '');
+// 3: CreateCatalog("FOR WORK", "Merge Master", "img/image.svg", '');
+// 4: CreateCatalog("FOR WORK", "Shortcut Cheater", "img/image.svg", '');
+// 5: CreateCatalog("FOR WORK", "Async Tamer", "img/image.svg", '');
+// 6: CreateCatalog("FOR WORK", "CSS Tamer", "img/image.svg", '');
+// 7: CreateCatalog("FOR WORK", "Time Hacker", "img/image.svg", '');
+// 8: CreateCatalog("FOR WORK", "Layout Master", "img/image.svg", '');
+// 9: CreateCatalog("FOR WORK", "Documentation Whisperer", "img/image.svg", '');
+// 10: CreateCatalog("FOR WORK", "Feedback Master", "img/image.svg", '');
+// 11: CreateCatalog("FOR WORK", "Code Minimalist", "img/image.svg", '');
+// 12: CreateCatalog("FOR WORK", "Pixel-Perfect Magician", "img/image.svg", '');
 
 import { CreateCatalog } from "../../../utilities/createItemCatalog";
 
 function CreateItemsCatalogSection1() {
-  CreateCatalog("FOR WORK", "CONSOLE.LOG GURU", "img/image.svg");
+  CreateCatalog(
+    "FOR WORK",
+    "CONSOLE.LOG GURU",
+    "img/image.svg",
+    "bestGiftsConteiner"
+  );
 }
 
 export { CreateItemsCatalogSection1 };

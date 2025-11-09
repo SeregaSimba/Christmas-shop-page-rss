@@ -5,9 +5,11 @@ import { FourthSection } from "../content/fourthSection/fourthSection";
 import { FifthSection } from "../content/fifthSection/fifthSection";
 import { SixthSection } from "../content/sixthSection/sixthSection";
 import { createEll } from "../header/header";
+import { ShopSection } from "../content/shopCatalog/shopSection";
 
 function Main() {
   SectionMainPag();
+  ShopSection();
 }
 
 function SectionMainPag() {
