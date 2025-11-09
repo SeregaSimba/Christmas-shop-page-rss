@@ -1,4 +1,5 @@
 import { createEll, addClass } from "../../utilities/createFunc";
+import { HealthItems } from "./healthItems";
 
 function ForHealth() {
   const shopItems = document.getElementById("contentShop");
@@ -9,6 +10,7 @@ function ForHealth() {
   sectionHealth.setAttribute("id", "forHealth");
   sectionHealth.style.display = "none";
   shopItems.appendChild(sectionHealth);
+  HealthItems();
 }
 
 export { ForHealth };

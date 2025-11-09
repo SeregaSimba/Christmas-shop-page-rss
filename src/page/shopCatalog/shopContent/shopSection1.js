@@ -1,3 +1,9 @@
+import {
+  ButtonAll,
+  ButtonHarmony,
+  ButtonHealth,
+  ButtonWork,
+} from "../../../utilities/buttonShop";
 import { createEll, addClass } from "../../../utilities/createFunc";
 
 function ShopSectionTitle() {
@@ -26,30 +32,55 @@ function ShopSectionTitle() {
   const itemLi1 = createEll("li");
   addClass(itemLi1, "li-header");
   addClass(itemLi1, "none-linc2");
-  itemLi1.innerText = "ALL";
   linkShopUl.appendChild(itemLi1);
+
+  const buttonAll = createEll("button");
+  addClass(buttonAll, "button-all");
+  buttonAll.innerText = "ALL";
+  buttonAll.setAttribute("id", "buttonAll");
+  buttonAll.addEventListener("click", ButtonAll);
+  itemLi1.appendChild(buttonAll);
 
   const itemLi2 = createEll("li");
   addClass(itemLi2, "li-header2");
   addClass(itemLi2, "li-a-header2");
-  itemLi2.innerText = "FOR WORK";
   linkShopUl.appendChild(itemLi2);
+
+  const buttonWork = createEll("button");
+  addClass(buttonWork, "button-work");
+  buttonWork.innerText = "FOR WORK";
+  buttonWork.setAttribute("id", "buttonWork");
+  buttonWork.addEventListener("click", ButtonWork);
+  itemLi2.appendChild(buttonWork);
 
   const itemLi3 = createEll("li");
   addClass(itemLi3, "li-header2");
   addClass(itemLi3, "li-a-header2");
-  itemLi3.innerText = "FOR HEALTH";
   linkShopUl.appendChild(itemLi3);
+
+  const buttonHealth = createEll("button");
+  addClass(buttonHealth, "button-health");
+  buttonHealth.innerText = "FOR HEALTH";
+  buttonHealth.setAttribute("id", "buttonHealth");
+  buttonHealth.addEventListener("click", ButtonHealth);
+  itemLi3.appendChild(buttonHealth);
 
   const itemLi4 = createEll("li");
   addClass(itemLi4, "li-header2");
   addClass(itemLi4, "li-a-header2");
-  itemLi4.innerText = "FOR HARMONY";
   linkShopUl.appendChild(itemLi4);
+
+  const buttonHarmony = createEll("button");
+  addClass(buttonHarmony, "button-harmony");
+  buttonHarmony.innerText = "FOR HARMONY";
+  buttonHarmony.setAttribute("id", "buttonHarmony");
+  buttonHarmony.addEventListener("click", ButtonHarmony);
+  itemLi4.appendChild(buttonHarmony);
 
   const sectionAllCatalogShop = createEll("section");
   addClass(sectionAllCatalogShop, "conteiner-dest-magasin");
   sectionAllCatalogShop.setAttribute("id", "shopItems");
+  sectionAllCatalogShop.style.display = "flex";
   contentSection.appendChild(sectionAllCatalogShop);
 }
 

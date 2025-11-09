@@ -1,4 +1,5 @@
 import { createEll, addClass } from "../../utilities/createFunc";
+import { HarmonyItems } from "./harmonyItems";
 
 function ForHarmony() {
   const shopItems = document.getElementById("contentShop");
@@ -9,6 +10,8 @@ function ForHarmony() {
   sectionHarmony.setAttribute("id", "forHarmony");
   sectionHarmony.style.display = "none";
   shopItems.appendChild(sectionHarmony);
+
+  HarmonyItems();
 }
 
 export { ForHarmony };

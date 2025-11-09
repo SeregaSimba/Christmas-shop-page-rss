@@ -669,7 +669,6 @@ a {
 }
 
 .conteiner-dest-magasin {
-  display: flex;
   flex-direction: row;
   justify-content: center;
   align-content: center;
