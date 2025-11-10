@@ -1,36 +1,31 @@
 import { createEll, addClass } from "../../../utilities/createFunc";
+import "./section3.css";
 
 function ThirdSection() {
   const main = document.getElementById("globalMain");
 
   const thirdSection = createEll("section");
   addClass(thirdSection, "slider");
-  addClass(thirdSection, "conteiner");
   main.appendChild(thirdSection);
 
   const sliderSection = createEll("section");
-  addClass(sliderSection, "conteiner-slide");
+  addClass(sliderSection, "container-slider");
   thirdSection.appendChild(sliderSection);
 
   const sectionSliderTitle = createEll("section");
   addClass(sectionSliderTitle, "slider-title");
   sliderSection.appendChild(sectionSliderTitle);
 
-  const sliderTitleArticle = createEll("article");
-  sectionSliderTitle.appendChild(sliderTitleArticle);
-
-  const sliderPTitle = createEll("p");
-  addClass(sliderPTitle, "size-conteiner");
-  addClass(sliderPTitle, "slider-size-p");
+  const sliderPTitle = createEll("h3");
   sliderPTitle.innerText = "Become Happier!";
-  sliderTitleArticle.appendChild(sliderPTitle);
+  sectionSliderTitle.appendChild(sliderPTitle);
 
   const titleH2 = createEll("h2");
   titleH2.innerText = "IN THE NEW 2025";
   sectionSliderTitle.appendChild(titleH2);
 
   const sectionContainerMain = createEll("section");
-  addClass(sectionContainerMain, "slider-conteiner-main");
+  addClass(sectionContainerMain, "slider-container-main");
   sliderSection.appendChild(sectionContainerMain);
 
   const sectionSlider2 = createEll("section");
@@ -39,15 +34,14 @@ function ThirdSection() {
 
   const sectionChristmasSlider = createEll("section");
   addClass(sectionChristmasSlider, "christmas-slider");
-  addClass(sectionChristmasSlider, "styleLeftIndex");
   sectionChristmasSlider.setAttribute("id", "styleLeftIndex");
   sectionSlider2.appendChild(sectionChristmasSlider);
 
   const articleTextSlider = createEll("article");
-  addClass(articleTextSlider, "text-slider");
   sectionChristmasSlider.appendChild(articleTextSlider);
 
   const sliderPText = createEll("p");
+  addClass(sliderPText, "text-slider");
   sliderPText.innerText = "LIVE";
   articleTextSlider.appendChild(sliderPText);
 
@@ -61,10 +55,10 @@ function ThirdSection() {
   articleImg1.appendChild(imgSlider1);
 
   const articleTextSlider2 = createEll("article");
-  addClass(articleTextSlider2, "text-slider");
   sectionChristmasSlider.appendChild(articleTextSlider2);
 
   const sliderPText2 = createEll("p");
+  addClass(sliderPText2, "text-slider");
   sliderPText2.innerText = "CREATE";
   articleTextSlider2.appendChild(sliderPText2);
 
@@ -78,10 +72,10 @@ function ThirdSection() {
   articleImg2.appendChild(imgSlider2);
 
   const articleTextSlider3 = createEll("article");
-  addClass(articleTextSlider3, "text-slider");
   sectionChristmasSlider.appendChild(articleTextSlider3);
 
   const sliderPText3 = createEll("p");
+  addClass(sliderPText3, "text-slider");
   sliderPText3.innerText = "LOVE";
   articleTextSlider3.appendChild(sliderPText3);
 
@@ -96,11 +90,11 @@ function ThirdSection() {
   //
 
   const articleTextSlider4 = createEll("article");
-  addClass(articleTextSlider4, "text-slider");
   sectionChristmasSlider.appendChild(articleTextSlider4);
 
   const sliderPText4 = createEll("p");
-  sliderPText3.innerText = "DREAM";
+  addClass(sliderPText4, "text-slider");
+  sliderPText4.innerText = "DREAM";
   articleTextSlider4.appendChild(sliderPText4);
 
   const articleImg4 = createEll("article");
@@ -118,10 +112,7 @@ function ThirdSection() {
 
   const buttonSliderLeft = createEll("button");
   buttonSliderLeft.setAttribute("id", "buttonSlider");
-  addClass(buttonSliderLeft, "leftButton");
-  addClass(buttonSliderLeft, "sliderButton");
   addClass(buttonSliderLeft, "button-slider-main");
-  addClass(buttonSliderLeft, "button-slider-main-none");
   articleButtonSlider.appendChild(buttonSliderLeft);
 
   const ingButtonLeft = createEll("img");
@@ -134,10 +125,7 @@ function ThirdSection() {
 
   const buttonSliderRight = createEll("button");
   buttonSliderRight.setAttribute("id", "buttonSlider2");
-  addClass(buttonSliderRight, "rightButton");
-  addClass(buttonSliderRight, "sliderButton");
   addClass(buttonSliderRight, "button-slider-main2");
-  //   addClass(buttonSliderRight, "button-slider-main-none");
   articleButtonSlider.appendChild(buttonSliderRight);
 
   const ingButtonRight = createEll("img");

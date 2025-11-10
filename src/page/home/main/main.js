@@ -27,7 +27,7 @@ function SectionMainPag() {
 
   FirstSection();
   TwoSection();
-  // ThirdSection();
+  ThirdSection();
   // FourthSection();
   // FifthSection();
   // SixthSection();
