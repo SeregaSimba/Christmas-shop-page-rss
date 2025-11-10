@@ -6,13 +6,13 @@ function ButtonHeaderGifts() {
   const sectionContacts = document.getElementById("sectionContacts");
 
   if (sectionPageShop.style.display === "none") {
-    sectionPageShop.style.display = "block";
+    sectionPageShop.style.display = "flex";
     sectionPageHom.style.display = "none";
     sectionAbout.style.display = "none";
     sectionBestGifts.style.display = "none";
     sectionContacts.style.display = "none";
   } else {
-    sectionPageHom.style.display = "block";
+    sectionPageHom.style.display = "flex";
     sectionPageShop.style.display = "none";
     sectionAbout.style.display = "none";
     sectionBestGifts.style.display = "none";
@@ -28,13 +28,13 @@ function ButtonHeaderAbout() {
   const sectionContacts = document.getElementById("sectionContacts");
 
   if (sectionAbout.style.display === "none") {
-    sectionAbout.style.display = "block";
+    sectionAbout.style.display = "flex";
     sectionPageHom.style.display = "none";
     sectionPageShop.style.display = "none";
     sectionBestGifts.style.display = "none";
     sectionContacts.style.display = "none";
   } else {
-    sectionPageHom.style.display = "block";
+    sectionPageHom.style.display = "flex";
     sectionPageShop.style.display = "none";
     sectionAbout.style.display = "none";
     sectionBestGifts.style.display = "none";
@@ -50,13 +50,13 @@ function ButtonHeaderBestGifts() {
   const sectionContacts = document.getElementById("sectionContacts");
 
   if (sectionBestGifts.style.display === "none") {
-    sectionBestGifts.style.display = "block";
+    sectionBestGifts.style.display = "flex";
     sectionAbout.style.display = "none";
     sectionPageHom.style.display = "none";
     sectionPageShop.style.display = "none";
     sectionContacts.style.display = "none";
   } else {
-    sectionPageHom.style.display = "block";
+    sectionPageHom.style.display = "flex";
     sectionPageShop.style.display = "none";
     sectionAbout.style.display = "none";
     sectionBestGifts.style.display = "none";
@@ -72,13 +72,13 @@ function ButtonHeaderContacts() {
   const sectionContacts = document.getElementById("sectionContacts");
 
   if (sectionContacts.style.display === "none") {
-    sectionContacts.style.display = "block";
+    sectionContacts.style.display = "flex";
     sectionBestGifts.style.display = "none";
     sectionAbout.style.display = "none";
     sectionPageHom.style.display = "none";
     sectionPageShop.style.display = "none";
   } else {
-    sectionPageHom.style.display = "block";
+    sectionPageHom.style.display = "flex";
     sectionPageShop.style.display = "none";
     sectionAbout.style.display = "none";
     sectionBestGifts.style.display = "none";

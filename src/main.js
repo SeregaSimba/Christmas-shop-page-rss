@@ -5,7 +5,7 @@ import { Footer } from "./components/footer/footer";
 function app() {
   Header();
   Main();
-  Footer();
+  // Footer();
   console.log("hell");
 }
 app();

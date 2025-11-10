@@ -12,25 +12,25 @@ import { ContactsPage } from "../../contacts/contacts";
 
 function Main() {
   SectionMainPag();
-  ShopSection();
-  AboutPage();
-  BestGiftsPage();
-  ContactsPage();
+  // ShopSection();
+  // AboutPage();
+  // BestGiftsPage();
+  // ContactsPage();
 }
 
 function SectionMainPag() {
   const main = document.getElementById("main-pag");
   const sectionMainContainer = createEll("section");
   sectionMainContainer.setAttribute("id", "globalMain");
-  sectionMainContainer.style.display = "block";
+  sectionMainContainer.style.display = "flex";
   main.appendChild(sectionMainContainer);
 
   FirstSection();
   TwoSection();
-  ThirdSection();
-  FourthSection();
-  FifthSection();
-  SixthSection();
+  // ThirdSection();
+  // FourthSection();
+  // FifthSection();
+  // SixthSection();
 }
 
 export { Main };

@@ -1,3 +1,4 @@
+import "./header.css";
 import { createEll, addClass } from "../../utilities/createFunc";
 import {
   ButtonHeaderGifts,
