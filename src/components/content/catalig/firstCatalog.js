@@ -18,6 +18,7 @@ function CreateItemsCatalogSection1() {
     "FOR WORK",
     "CONSOLE.LOG GURU",
     "img/image.svg",
+    "for-work",
     "bestGiftsConteiner"
   );
 }

@@ -1,12 +1,12 @@
 import { createEll, addClass } from "../../../utilities/createFunc";
 import { ButtonHeaderGifts } from "../../../utilities/buttonHeader";
+import "./section6.css";
 
 function SixthSection() {
   const main = document.getElementById("globalMain");
 
   const sectionCTA = createEll("section");
   addClass(sectionCTA, "CTA");
-  addClass(sectionCTA, "conteiner");
   main.appendChild(sectionCTA);
 
   const sectionStaContainer = createEll("section");
@@ -14,13 +14,23 @@ function SixthSection() {
   sectionCTA.appendChild(sectionStaContainer);
 
   const sectionTitleTame = createEll("section");
+  addClass(sectionTitleTame, "title-sta-section");
   sectionStaContainer.appendChild(sectionTitleTame);
 
   const titleH2Tame = createEll("h2");
   addClass(titleH2Tame, "sta-h2");
-  titleH2Tame.innerText =
-    "READY TO START YOUR JOURNEY TO A BETTER VERSION OF YOURSELF?";
+  titleH2Tame.innerText = "READY TO START YOUR JOURNEY";
   sectionTitleTame.appendChild(titleH2Tame);
+
+  const titleH2Tame2 = createEll("h2");
+  addClass(titleH2Tame2, "sta-h2");
+  titleH2Tame2.innerText = "TO A";
+  sectionTitleTame.appendChild(titleH2Tame2);
+
+  const titleH2Tame3 = createEll("h2");
+  addClass(titleH2Tame3, "sta-h2");
+  titleH2Tame3.innerText = "BETTER VERSION OF YOURSELF?";
+  sectionTitleTame.appendChild(titleH2Tame3);
 
   const sectionButtonTime = createEll("section");
   addClass(sectionButtonTime, "sta-button-conteiner");
@@ -37,14 +47,14 @@ function SixthSection() {
   articleTame.appendChild(buttonTame);
 
   const sectionTameContainer = createEll("section");
+  addClass(sectionTameContainer, "title-after-sta");
   sectionStaContainer.appendChild(sectionTameContainer);
 
   const articleP1 = createEll("article");
+  addClass(articleP1, "sta-p");
   sectionTameContainer.appendChild(articleP1);
 
   const titleTameP1 = createEll("p");
-  addClass(titleTameP1, "size-conteiner");
-  addClass(titleTameP1, "sta-p");
   titleTameP1.innerText = "The New Year is Coming Soon...";
   articleP1.appendChild(titleTameP1);
 
@@ -74,7 +84,7 @@ function SixthSection() {
   sectionTame.appendChild(span1);
 
   const articleHors = createEll("article");
-  addClass(articleHors, "sta-time2");
+  addClass(articleHors, "sta-time1");
   sectionTame.appendChild(articleHors);
 
   const HorsP1 = createEll("p");
@@ -91,12 +101,12 @@ function SixthSection() {
   articleHors.appendChild(horsP2);
 
   const span2 = createEll("span");
-  addClass(span2, "sta-span2");
+  addClass(span2, "sta-span1");
   sectionTame.appendChild(span2);
 
   //
   const articleMin = createEll("article");
-  addClass(articleMin, "sta-time3");
+  addClass(articleMin, "sta-time1");
   sectionTame.appendChild(articleMin);
 
   const MinP1 = createEll("p");
@@ -113,13 +123,13 @@ function SixthSection() {
   articleMin.appendChild(MinP2);
 
   const span3 = createEll("span");
-  addClass(span3, "sta-span3");
+  addClass(span3, "sta-span1");
   sectionTame.appendChild(span3);
 
   //
 
   const articleSec = createEll("article");
-  addClass(articleSec, "sta-time4");
+  addClass(articleSec, "sta-time1");
   sectionTame.appendChild(articleSec);
 
   const SecP1 = createEll("p");

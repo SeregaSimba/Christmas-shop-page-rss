@@ -1,12 +1,12 @@
 import { createEll, addClass } from "../../../utilities/createFunc";
 import { AddCatalog } from "../../../components/content/catalig/addCatalog";
+import "./section5.css";
 
 function FifthSection() {
   const main = document.getElementById("globalMain");
 
   const sectionBest = createEll("section");
   addClass(sectionBest, "best-Gifts");
-  addClass(sectionBest, "conteiner");
   sectionBest.setAttribute("id", "best-Gifts");
   main.appendChild(sectionBest);
 
@@ -21,8 +21,7 @@ function FifthSection() {
   const articleTitle = createEll("article");
   sectionBestTitle.appendChild(articleTitle);
 
-  const bestTitleP = createEll("p");
-  addClass(bestTitleP, "size-conteiner");
+  const bestTitleP = createEll("h1");
   addClass(bestTitleP, "best-p");
   bestTitleP.innerText = "Best Gifts";
   articleTitle.appendChild(bestTitleP);

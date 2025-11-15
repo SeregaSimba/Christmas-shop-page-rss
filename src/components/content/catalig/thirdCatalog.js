@@ -18,6 +18,7 @@ function CreateCatalogSection3() {
     "FOR HARMONY",
     "Joy Charger",
     "img/image-3.svg",
+    "for-harmony",
     "bestGiftsConteiner"
   );
 }

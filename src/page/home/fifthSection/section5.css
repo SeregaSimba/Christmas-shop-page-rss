@@ -1,0 +1,82 @@
+.best-Gifts {
+  background-image: var(--snowBackImg);
+  background-color: var(--backgroundColor);
+  width: 99%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 3rem 1rem;
+  transition: 3s;
+}
+
+.best-Gifts2 {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.best-gifts-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--colorFontHero);
+  gap: 1rem;
+}
+
+.best-p {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.best-Gifts-conteiner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.best-img {
+  background-color: var(--colorFontHero);
+  border-radius: 20px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  flex-shrink: 1;
+  transition: 2s;
+}
+
+.best-img:hover {
+  opacity: 0.7;
+}
+
+.best-h {
+  background-color: var(--backgroundColorBestGifts);
+  padding: 3rem 2rem;
+  border-radius: 20px;
+}
+
+.best-h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.for-work {
+  color: var(--forWork);
+}
+
+.best-h3 {
+  font-weight: 600;
+  font-size: 0.6rem;
+  transition: 1s;
+}
+
+.best-img:hover .best-h3 {
+  color: var(--backgroundColor);
+}

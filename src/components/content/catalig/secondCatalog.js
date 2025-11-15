@@ -18,6 +18,7 @@ function CreateCatalogSection2() {
     "FOR HEALTH",
     "Posture Levitation",
     "img/image-2.svg",
+    "for-health",
     "bestGiftsConteiner"
   );
 }

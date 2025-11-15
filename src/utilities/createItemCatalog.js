@@ -1,6 +1,6 @@
 import { createEll, addClass } from "../utilities/createFunc";
 
-function CreateCatalog(text, text2, srcImg, id) {
+function CreateCatalog(text, text2, srcImg, className, id) {
   const containerCatalog = document.getElementById(id);
 
   const sectionItem = createEll("section");
@@ -21,7 +21,7 @@ function CreateCatalog(text, text2, srcImg, id) {
 
   const titleH4 = createEll("h4");
   addClass(titleH4, "best-h4");
-  addClass(titleH4, "for-work");
+  addClass(titleH4, className);
   titleH4.innerText = text;
   articleItemTitle.appendChild(titleH4);
 

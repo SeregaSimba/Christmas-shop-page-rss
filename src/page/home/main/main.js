@@ -12,10 +12,10 @@ import { ContactsPage } from "../../contacts/contacts";
 
 function Main() {
   SectionMainPag();
-  // ShopSection();
-  // AboutPage();
-  // BestGiftsPage();
-  // ContactsPage();
+  ShopSection();
+  AboutPage();
+  BestGiftsPage();
+  ContactsPage();
 }
 
 function SectionMainPag() {
@@ -29,8 +29,8 @@ function SectionMainPag() {
   TwoSection();
   ThirdSection();
   // FourthSection();
-  // FifthSection();
-  // SixthSection();
+  FifthSection();
+  SixthSection();
 }
 
 export { Main };
