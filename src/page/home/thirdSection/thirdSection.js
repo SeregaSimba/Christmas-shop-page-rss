@@ -1,4 +1,5 @@
 import { createEll, addClass } from "../../../utilities/createFunc";
+import { sliderLogicLeft, sliderLogicRight } from "./slider";
 import "./section3.css";
 
 function ThirdSection() {
@@ -111,8 +112,9 @@ function ThirdSection() {
   sectionContainerMain.appendChild(articleButtonSlider);
 
   const buttonSliderLeft = createEll("button");
-  buttonSliderLeft.setAttribute("id", "buttonSlider");
+  buttonSliderLeft.setAttribute("id", "buttonSliderLeft");
   addClass(buttonSliderLeft, "button-slider-main");
+  buttonSliderLeft.addEventListener("click", sliderLogicLeft);
   articleButtonSlider.appendChild(buttonSliderLeft);
 
   const ingButtonLeft = createEll("img");
@@ -124,8 +126,9 @@ function ThirdSection() {
   //
 
   const buttonSliderRight = createEll("button");
-  buttonSliderRight.setAttribute("id", "buttonSlider2");
+  buttonSliderRight.setAttribute("id", "buttonSliderRight");
   addClass(buttonSliderRight, "button-slider-main2");
+  buttonSliderRight.addEventListener("click", sliderLogicRight);
   articleButtonSlider.appendChild(buttonSliderRight);
 
   const ingButtonRight = createEll("img");
