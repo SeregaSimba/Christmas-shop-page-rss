@@ -91,6 +91,16 @@
   transition: 2s;
 }
 
+.button-Left-none {
+  opacity: 0.2;
+  cursor: no-drop;
+}
+
+.button-Right-none {
+  opacity: 0.2;
+  cursor: no-drop;
+}
+
 .button-slider-main:hover {
   transition-property: background-color, background-image, filter;
   background-color: var(--colorFontHero);

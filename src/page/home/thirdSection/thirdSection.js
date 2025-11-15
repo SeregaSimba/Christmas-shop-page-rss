@@ -114,6 +114,7 @@ function ThirdSection() {
   const buttonSliderLeft = createEll("button");
   buttonSliderLeft.setAttribute("id", "buttonSliderLeft");
   addClass(buttonSliderLeft, "button-slider-main");
+  addClass(buttonSliderLeft, "button-Left-none");
   buttonSliderLeft.addEventListener("click", sliderLogicLeft);
   articleButtonSlider.appendChild(buttonSliderLeft);
 
