@@ -7,7 +7,7 @@ function app() {
 
   Header();
   Main();
-  // Footer();
+  Footer();
   console.log("hell");
 
   window.addEventListener("resize", () => {

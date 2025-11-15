@@ -1,10 +1,10 @@
 import { createEll, addClass } from "../../utilities/createFunc";
+import "./footer.css";
 
 function Footer() {
   const footer = document.getElementById("contacts-footer");
 
   const sectionFootContainer = createEll("section");
-  addClass(sectionFootContainer, "footer-conteiner");
   footer.appendChild(sectionFootContainer);
 
   const sectionFootNavContainer = createEll("section");
