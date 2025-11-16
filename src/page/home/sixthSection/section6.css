@@ -84,8 +84,9 @@
 }
 
 .timer {
-  font-size: 26px;
+  font-size: 1.4rem;
   font-weight: 600;
+  text-align: center;
 }
 
 .sta-deis {

@@ -1,9 +1,11 @@
 import { createEll, addClass } from "../../../utilities/createFunc";
 import { ButtonHeaderGifts } from "../../../utilities/buttonHeader";
+import { DateNewYar } from "../../../utilities/date";
 import "./section6.css";
 
 function SixthSection() {
   const main = document.getElementById("globalMain");
+  const myDate = new DateNewYar();
 
   const sectionCTA = createEll("section");
   addClass(sectionCTA, "CTA");
@@ -68,6 +70,8 @@ function SixthSection() {
 
   const deyP1 = createEll("p");
   addClass(deyP1, "timer");
+  deyP1.setAttribute("id", "dey");
+
   articleDey.appendChild(deyP1);
 
   const spanDey = createEll("span");
@@ -144,6 +148,13 @@ function SixthSection() {
   addClass(SecP2, "sta-deis");
   SecP2.innerText = "SECONDS";
   articleSec.appendChild(SecP2);
+
+  myDate.start(({ day, hours, minutes, seconds }) => {
+    document.getElementById("d").textContent = day;
+    document.getElementById("h").textContent = hours;
+    document.getElementById("m").textContent = minutes;
+    document.getElementById("s").textContent = seconds;
+  });
 }
 
 export { SixthSection };
