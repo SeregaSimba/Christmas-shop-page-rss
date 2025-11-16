@@ -86,9 +86,21 @@ function ButtonHeaderContacts() {
   }
 }
 
+function buttonBarMenOpen() {
+  const span1 = document.getElementById("span1");
+  const span2 = document.getElementById("span2");
+  const sectionBarMenu = document.getElementById("section-bar-menu");
+
+  span1.classList.toggle("span-bar-menu-click");
+  span2.classList.toggle("span-bar-menu2-click");
+  sectionBarMenu.classList.toggle("section-bar-menu-none");
+  document.body.classList.toggle("bodyOverflow");
+}
+
 export {
   ButtonHeaderGifts,
   ButtonHeaderAbout,
   ButtonHeaderBestGifts,
   ButtonHeaderContacts,
+  buttonBarMenOpen,
 };

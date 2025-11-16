@@ -9,8 +9,10 @@ import { ShopSection } from "../../shopCatalog/shopSection";
 import { AboutPage } from "../../about/about";
 import { BestGiftsPage } from "../../bestGifts/bestGifts";
 import { ContactsPage } from "../../contacts/contacts";
+import { BarMenu } from "../../../components/barMenu/barMenu";
 
 function Main() {
+  BarMenu();
   SectionMainPag();
   ShopSection();
   AboutPage();

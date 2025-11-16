@@ -5,6 +5,7 @@ import {
   ButtonHeaderAbout,
   ButtonHeaderBestGifts,
   ButtonHeaderContacts,
+  buttonBarMenOpen,
 } from "../../utilities/buttonHeader";
 
 function Header() {
@@ -36,44 +37,13 @@ function Header() {
   addClass(sectionContents, "contents");
   sectionHeader.appendChild(sectionContents);
 
-  const articleBar = createEll("article");
-  addClass(articleBar, "button-bar-men");
-  sectionContents.appendChild(articleBar);
-
-  const buttonMobile = createEll("button");
-  addClass(buttonMobile, "slider-bar");
-  buttonMobile.setAttribute("id", "sliderBar2None");
-  articleBar.appendChild(buttonMobile);
-
-  const span1 = createEll("span");
-  addClass(span1, "span-bar-menu3");
-  buttonMobile.appendChild(span1);
-
-  const span2 = createEll("span");
-  addClass(span2, "span-bar-menu4");
-  buttonMobile.appendChild(span2);
-
-  const buttonMobile2 = createEll("button");
-  addClass(buttonMobile2, "slider-bar2");
-  addClass(buttonMobile2, "sliderBar2None");
-  buttonMobile2.setAttribute("id", "sliderBar2None");
-  articleBar.appendChild(buttonMobile2);
-
-  const span3 = createEll("span");
-  addClass(span3, "span-bar-menu");
-  buttonMobile.appendChild(span3);
-
-  const span4 = createEll("span");
-  addClass(span4, "span-bar-menu2");
-  buttonMobile.appendChild(span4);
-
   const sectionHeaderMenu = createEll("section");
   addClass(sectionHeaderMenu, "bar-window-menu");
+  sectionHeaderMenu.setAttribute("id", "openWindowMenu");
   sectionContents.appendChild(sectionHeaderMenu);
 
   const ulHeaderMenu = createEll("ul");
   addClass(ulHeaderMenu, "ul-header");
-  addClass(ulHeaderMenu, "bar-menu");
   sectionHeaderMenu.appendChild(ulHeaderMenu);
 
   const li1 = createEll("li");
@@ -109,6 +79,27 @@ function Header() {
   aLiHeader4.innerText = "CONTACTS";
   aLiHeader4.addEventListener("click", ButtonHeaderContacts);
   li4.appendChild(aLiHeader4);
+
+  const articleBar = createEll("article");
+  addClass(articleBar, "button-bar-men");
+  articleBar.setAttribute("id", "openBar");
+  sectionContents.appendChild(articleBar);
+
+  const buttonMobile = createEll("button");
+  addClass(buttonMobile, "slider-bar");
+  buttonMobile.setAttribute("id", "sliderBar2None");
+  articleBar.appendChild(buttonMobile);
+  buttonMobile.addEventListener("click", buttonBarMenOpen);
+
+  const span1 = createEll("span");
+  addClass(span1, "span-bar-menu");
+  span1.setAttribute("id", "span1");
+  buttonMobile.appendChild(span1);
+
+  const span2 = createEll("span");
+  addClass(span2, "span-bar-menu2");
+  span2.setAttribute("id", "span2");
+  buttonMobile.appendChild(span2);
 }
 
 export { Header, createEll };

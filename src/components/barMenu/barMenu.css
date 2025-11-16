@@ -1,0 +1,26 @@
+.section-bar-menu {
+  background-color: var(--colorFontHero);
+  width: 99%;
+  position: fixed;
+  padding: 8rem 2rem;
+  z-index: 1;
+  top: 72px;
+  right: 0px;
+  border-radius: 20px;
+  transform: translateX(0rem);
+  transition: 3s;
+  height: 100vh;
+}
+
+.section-bar-menu-none {
+  transform: translateX(100%);
+  transition: 3s;
+}
+
+.bar-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
