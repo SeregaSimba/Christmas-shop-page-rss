@@ -11,4 +11,15 @@ function OpenBarMenu() {
     barMenu.classList.remove("open");
   }
 }
-export { OpenBarMenu };
+
+function CloseBarMenu() {
+  const span1 = document.getElementById("span1");
+  const span2 = document.getElementById("span2");
+  const sectionBarMenu = document.getElementById("section-bar-menu");
+
+  span1.classList.remove("span-bar-menu-click");
+  span2.classList.remove("span-bar-menu2-click");
+  sectionBarMenu.classList.add("section-bar-menu-none");
+  document.body.classList.remove("bodyOverflow");
+}
+export { OpenBarMenu, CloseBarMenu };

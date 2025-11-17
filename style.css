@@ -4,6 +4,7 @@
   --snowBackImg: url(/img/2dfc048014f1902a0c5cef20e2241de5.png);
   --santaImg: url(img/santa.png);
   --olenImg: url(img/04957fcbcda39d1d47f087b8447ea5a8.png);
+  --backImgShop: url(img/bg-garland.png);
   --colorFontHero: #ffffff;
   --darkColor: #000000;
   --goldColor: #ffd700;
@@ -21,26 +22,6 @@
   scroll-behavior: smooth;
 }
 
-/* вернуться позже что бы исправить общий контейнер */
-
-/* вернуться позже что бы исправить общий контейнер */
-
-.conteiner3 {
-  background-repeat: no-repeat;
-  background-position: center;
-  align-content: center;
-}
-
-.conteiner-best {
-  background-size: cover;
-  background-color: #ff4646;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 1440px;
-  align-content: center;
-  padding: 3px 0;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -51,203 +32,18 @@ body {
   margin: auto;
 }
 
-.bodyOverflow {
-  overflow: hidden;
-}
-
 a {
   text-decoration: none;
   color: black;
 }
 
+.bodyOverflow {
+  overflow: hidden;
+}
+
 .main-pag {
   position: relative;
 }
-
-.contacts {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.contacts2 {
-  display: inline;
-  align-content: center;
-  width: 520px;
-  height: 22px;
-}
-
-.li-header2 {
-  display: inline;
-  margin-right: 5px;
-}
-
-.none-linc {
-  font-size: 15px;
-  padding: 12px 20px;
-  background-color: #ff909029;
-  border-radius: 10px;
-  color: #ff4646;
-}
-
-.none-linc2 {
-  font-size: 15px;
-  padding: 12px 20px;
-  background-color: #ff909062;
-  border-radius: 10px;
-  color: #ffffff;
-}
-
-/*-----------------------------Main----------------------------*/
-
-.h1 {
-  color: #ffffff;
-  font-size: 23px;
-  letter-spacing: 3px;
-  line-height: 60px;
-  text-indent: 45px;
-  font-weight: lighter;
-}
-
-.h12 {
-  color: #ffffff;
-  font-size: 23px;
-  letter-spacing: 3px;
-  line-height: 55px;
-  text-indent: 30px;
-  font-weight: 200;
-  padding: 5px 0;
-}
-
-.span-h1-hero2 {
-  margin-left: 55px;
-}
-
-.span2 {
-  margin-left: 30px;
-}
-
-.span3 {
-  margin-left: 45px;
-}
-
-.hero-conteiner3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-  padding: 15px 0;
-}
-
-.hero2 {
-  background-color: #ff4646;
-  border-radius: 20px 20px 0 0;
-  background-image: url(img/bg-garland.png);
-  background-position: top;
-  background-size: contain;
-  padding: 40px 0;
-  transition: 2s;
-}
-
-/*----------------One Section-------------------------*/
-
-/*--------------------Thu Section------------------*/
-
-/*---------------------------------------------*/
-
-/*--------------------Slider----------------*/
-
-.best-Gifts3 {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #ff4646;
-  border-radius: 20px 20px 20px 20px;
-}
-
-.best-Gifts4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 500px;
-  border-radius: 0 0 20px 20px;
-  background-color: #ff4646;
-}
-
-.best-Gifts-conteiner2 {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-self: stretch;
-  -webkit-box-align: start;
-  justify-content: center;
-  -webkit-box-pack: center;
-  gap: 20px;
-  margin: 15px auto;
-}
-
-.conteiner-dest-magasin {
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.shadov-window {
-  background-color: #181c299e;
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  padding: 20px;
-  transform: translate(-50%, -50%);
-  z-index: 99;
-}
-
-.shadov-window2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-.best-shadov {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
-  padding-bottom: 10px;
-}
-
-.best-shadov1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 3px;
-}
-
-.best-shadov2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.best-shadov3 {
-  display: flex;
-  justify-content: space-between;
-  gap: 3px;
-}
-
-/*-----------------------------------------------*/
-
-/*-----------------------------------------------*/
 
 .for-health {
   color: var(--forHealth);
@@ -256,7 +52,3 @@ a {
 .for-harmony {
   color: var(--forHarmony);
 }
-
-/*-----------------Best--------------*/
-
-/*-----------------STA---------------*/

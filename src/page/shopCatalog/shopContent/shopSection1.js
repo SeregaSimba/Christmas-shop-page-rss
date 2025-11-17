@@ -18,60 +18,64 @@ function ShopSectionTitle() {
   titleSection.appendChild(articleTitle);
 
   const titleH1 = createEll("h1");
-  titleH1.innerText = "ACHIEVE HEALTH HARMONY, AND INNER STRENGTH";
+  titleH1.innerText = "ACHIEVE HEALTH HARMONY,";
   articleTitle.appendChild(titleH1);
+
+  const titleH12 = createEll("h1");
+  titleH12.innerText = "AND";
+  articleTitle.appendChild(titleH12);
+
+  const titleH13 = createEll("h1");
+  titleH13.innerText = "INNER STRENGTH";
+  articleTitle.appendChild(titleH13);
 
   const articleLinkShop = createEll("article");
   addClass(articleLinkShop, "contacts2");
   titleSection.appendChild(articleLinkShop);
 
   const linkShopUl = createEll("ul");
-  addClass(linkShopUl, "ul-header");
+  addClass(linkShopUl, "ul-shop");
   articleLinkShop.appendChild(linkShopUl);
 
   const itemLi1 = createEll("li");
-  addClass(itemLi1, "li-header");
-  addClass(itemLi1, "none-linc2");
+  addClass(itemLi1, "li-shop");
   linkShopUl.appendChild(itemLi1);
 
   const buttonAll = createEll("button");
   addClass(buttonAll, "button-all");
-  buttonAll.innerText = "ALL";
+  buttonAll.innerText = "ALL WORK";
   buttonAll.setAttribute("id", "buttonAll");
   buttonAll.addEventListener("click", ButtonAll);
   itemLi1.appendChild(buttonAll);
 
   const itemLi2 = createEll("li");
-  addClass(itemLi2, "li-header2");
-  addClass(itemLi2, "li-a-header2");
+  addClass(itemLi2, "li-shop");
   linkShopUl.appendChild(itemLi2);
 
   const buttonWork = createEll("button");
-  addClass(buttonWork, "button-work");
+  addClass(buttonWork, "button-all");
   buttonWork.innerText = "FOR WORK";
   buttonWork.setAttribute("id", "buttonWork");
   buttonWork.addEventListener("click", ButtonWork);
   itemLi2.appendChild(buttonWork);
 
   const itemLi3 = createEll("li");
-  addClass(itemLi3, "li-header2");
-  addClass(itemLi3, "li-a-header2");
+  addClass(itemLi3, "li-shop");
   linkShopUl.appendChild(itemLi3);
 
   const buttonHealth = createEll("button");
-  addClass(buttonHealth, "button-health");
+  addClass(buttonHealth, "button-all");
   buttonHealth.innerText = "FOR HEALTH";
   buttonHealth.setAttribute("id", "buttonHealth");
   buttonHealth.addEventListener("click", ButtonHealth);
   itemLi3.appendChild(buttonHealth);
 
   const itemLi4 = createEll("li");
-  addClass(itemLi4, "li-header2");
-  addClass(itemLi4, "li-a-header2");
+  addClass(itemLi4, "li-shop");
   linkShopUl.appendChild(itemLi4);
 
   const buttonHarmony = createEll("button");
-  addClass(buttonHarmony, "button-harmony");
+  addClass(buttonHarmony, "button-all");
   buttonHarmony.innerText = "FOR HARMONY";
   buttonHarmony.setAttribute("id", "buttonHarmony");
   buttonHarmony.addEventListener("click", ButtonHarmony);
