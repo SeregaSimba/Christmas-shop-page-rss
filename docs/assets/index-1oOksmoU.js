@@ -209,7 +209,7 @@ function q() {
   const f = t("p");
   (f.innerText = "and Happy New Year"), y.appendChild(f);
 }
-const Q = "./assets/santa-_rx7H_QE.png";
+const Q = "./santa-_rx7H_QE.png";
 function $() {
   const o = document.getElementById("globalMain"),
     n =
@@ -339,7 +339,7 @@ function nt() {
   c.appendChild(O);
   const b = t("img");
   e(b, "imagesSlider"),
-    b.setAttribute("src", "./img/christmas-tree-ball.png"),
+    b.setAttribute("src", "./christmas-tree-ball.png"),
     b.setAttribute("alt", "Christmas Tree Ball"),
     O.appendChild(b);
   const S = t("article");
@@ -350,7 +350,7 @@ function nt() {
   c.appendChild(v);
   const F = t("img");
   e(F, "imagesSlider"),
-    F.setAttribute("src", "./img/fairytale-house.png"),
+    F.setAttribute("src", "./fairytale-house.png"),
     F.setAttribute("alt", "Fairytale House"),
     v.appendChild(F);
   const R = t("article");
@@ -362,7 +362,7 @@ function nt() {
     I.addEventListener("click", tt),
     R.appendChild(I);
   const L = t("img");
-  L.setAttribute("src", "./img/Vectorleft.png"),
+  L.setAttribute("src", "./Vectorleft.png"),
     L.setAttribute("alt", "Vector"),
     L.setAttribute("id", "vector"),
     I.appendChild(L);
@@ -372,7 +372,7 @@ function nt() {
     B.addEventListener("click", et),
     R.appendChild(B);
   const M = t("img");
-  M.setAttribute("src", "./img/Vectorright.png"),
+  M.setAttribute("src", "./Vectorright.png"),
     M.setAttribute("alt", "Vector"),
     M.setAttribute("id", "vector2"),
     B.appendChild(M);
