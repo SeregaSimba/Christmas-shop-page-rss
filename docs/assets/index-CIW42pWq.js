@@ -1186,7 +1186,7 @@ function vt() {
   const r = t("section");
   e(r, "footer-cont"), s.appendChild(r);
   const l = t("img");
-  l.setAttribute("src", "/img/GroupSANTA.svg"),
+  l.setAttribute("src", "./img/GroupSANTA.svg"),
     l.setAttribute("alt", "Group"),
     r.appendChild(l);
   const d = t("p");
@@ -1200,7 +1200,7 @@ function vt() {
   const g = t("section");
   e(g, "footer-cont"), s.appendChild(g);
   const m = t("img");
-  m.setAttribute("src", "/img/christmas-treeELCA.svg"),
+  m.setAttribute("src", "./img/christmas-treeELCA.svg"),
     m.setAttribute("alt", "Group"),
     g.appendChild(m);
   const h = t("p");
@@ -1218,7 +1218,7 @@ function vt() {
   const u = t("section");
   e(u, "footer-cont"), s.appendChild(u);
   const C = t("img");
-  C.setAttribute("src", "/img/GroupSNEICK.svg"),
+  C.setAttribute("src", "./img/GroupSNEICK.svg"),
     C.setAttribute("alt", "Group"),
     u.appendChild(C);
   const b = t("p");
