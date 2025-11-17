@@ -8,7 +8,7 @@
         for (const d of l.addedNodes)
           d.tagName === "LINK" && d.rel === "modulepreload" && s(d);
   }).observe(document, { childList: !0, subtree: !0 });
-  function i(r) {
+  function o(r) {
     const l = {};
     return (
       r.integrity && (l.integrity = r.integrity),
@@ -24,105 +24,105 @@
   function s(r) {
     if (r.ep) return;
     r.ep = !0;
-    const l = i(r);
+    const l = o(r);
     fetch(r.href, l);
   }
 })();
-function t(o) {
-  return document.createElement(o);
+function t(i) {
+  return document.createElement(i);
 }
-function e(o, n) {
-  return o.classList.add(n);
+function e(i, n) {
+  return i.classList.add(n);
 }
 function D() {
-  const o = document.getElementById("globalMain"),
+  const i = document.getElementById("globalMain"),
     n = document.getElementById("bestGifts"),
-    i = document.getElementById("aboutPage"),
+    o = document.getElementById("aboutPage"),
     s = document.getElementById("bestGiftsPage"),
     r = document.getElementById("sectionContacts");
   n.style.display === "none"
     ? ((n.style.display = "flex"),
-      (o.style.display = "none"),
       (i.style.display = "none"),
+      (o.style.display = "none"),
       (s.style.display = "none"),
       (r.style.display = "none"))
-    : ((o.style.display = "flex"),
+    : ((i.style.display = "flex"),
       (n.style.display = "none"),
-      (i.style.display = "none"),
+      (o.style.display = "none"),
       (s.style.display = "none"),
       (r.style.display = "none"));
 }
 function Y() {
-  const o = document.getElementById("globalMain"),
+  const i = document.getElementById("globalMain"),
     n = document.getElementById("bestGifts"),
-    i = document.getElementById("aboutPage"),
+    o = document.getElementById("aboutPage"),
     s = document.getElementById("bestGiftsPage"),
     r = document.getElementById("sectionContacts");
-  i.style.display === "none"
-    ? ((i.style.display = "flex"),
-      (o.style.display = "none"),
+  o.style.display === "none"
+    ? ((o.style.display = "flex"),
+      (i.style.display = "none"),
       (n.style.display = "none"),
       (s.style.display = "none"),
       (r.style.display = "none"))
-    : ((o.style.display = "flex"),
+    : ((i.style.display = "flex"),
       (n.style.display = "none"),
-      (i.style.display = "none"),
+      (o.style.display = "none"),
       (s.style.display = "none"),
       (r.style.display = "none"));
 }
 function U() {
-  const o = document.getElementById("globalMain"),
+  const i = document.getElementById("globalMain"),
     n = document.getElementById("bestGifts"),
-    i = document.getElementById("aboutPage"),
+    o = document.getElementById("aboutPage"),
     s = document.getElementById("bestGiftsPage"),
     r = document.getElementById("sectionContacts");
   s.style.display === "none"
     ? ((s.style.display = "flex"),
-      (i.style.display = "none"),
       (o.style.display = "none"),
+      (i.style.display = "none"),
       (n.style.display = "none"),
       (r.style.display = "none"))
-    : ((o.style.display = "flex"),
+    : ((i.style.display = "flex"),
       (n.style.display = "none"),
-      (i.style.display = "none"),
+      (o.style.display = "none"),
       (s.style.display = "none"),
       (r.style.display = "none"));
 }
 function _() {
-  const o = document.getElementById("globalMain"),
+  const i = document.getElementById("globalMain"),
     n = document.getElementById("bestGifts"),
-    i = document.getElementById("aboutPage"),
+    o = document.getElementById("aboutPage"),
     s = document.getElementById("bestGiftsPage"),
     r = document.getElementById("sectionContacts");
   r.style.display === "none"
     ? ((r.style.display = "flex"),
       (s.style.display = "none"),
-      (i.style.display = "none"),
       (o.style.display = "none"),
-      (n.style.display = "none"))
-    : ((o.style.display = "flex"),
-      (n.style.display = "none"),
       (i.style.display = "none"),
+      (n.style.display = "none"))
+    : ((i.style.display = "flex"),
+      (n.style.display = "none"),
+      (o.style.display = "none"),
       (s.style.display = "none"),
       (r.style.display = "none"));
 }
-function W() {
-  const o = document.getElementById("span1"),
+function G() {
+  const i = document.getElementById("span1"),
     n = document.getElementById("span2"),
-    i = document.getElementById("section-bar-menu");
-  o.classList.toggle("span-bar-menu-click"),
+    o = document.getElementById("section-bar-menu");
+  i.classList.toggle("span-bar-menu-click"),
     n.classList.toggle("span-bar-menu2-click"),
-    i.classList.toggle("section-bar-menu-none"),
+    o.classList.toggle("section-bar-menu-none"),
     document.body.classList.toggle("bodyOverflow");
 }
-function j() {
-  const o = document.getElementById("header"),
+function q() {
+  const i = document.getElementById("header"),
     n = t("section");
-  e(n, "header"), o.appendChild(n);
-  const i = t("a");
-  i.setAttribute("href", "index.html"), n.appendChild(i);
+  e(n, "header"), i.appendChild(n);
+  const o = t("a");
+  o.setAttribute("href", "index.html"), n.appendChild(o);
   const s = t("article");
-  e(s, "logo"), i.appendChild(s);
+  e(s, "logo"), o.appendChild(s);
   const r = t("img");
   r.setAttribute("src", "img/snowflakeICON.svg"),
     r.setAttribute("alt", "Logo"),
@@ -155,40 +155,40 @@ function j() {
     (u.innerText = "ABOUT"),
     u.addEventListener("click", Y),
     m.appendChild(u);
-  const E = t("button");
-  e(E, "li-a-header"),
-    (E.innerText = "BEST"),
-    E.addEventListener("click", U),
-    h.appendChild(E);
-  const H = t("button");
-  e(H, "li-a-header"),
-    (H.innerText = "CONTACTS"),
-    H.addEventListener("click", _),
-    y.appendChild(H);
+  const C = t("button");
+  e(C, "li-a-header"),
+    (C.innerText = "BEST"),
+    C.addEventListener("click", U),
+    h.appendChild(C);
+  const b = t("button");
+  e(b, "li-a-header"),
+    (b.innerText = "CONTACTS"),
+    b.addEventListener("click", _),
+    y.appendChild(b);
   const T = t("article");
   e(T, "button-bar-men"), T.setAttribute("id", "openBar"), d.appendChild(T);
-  const A = t("button");
-  e(A, "slider-bar"),
-    A.setAttribute("id", "sliderBar2None"),
-    T.appendChild(A),
-    A.addEventListener("click", W);
+  const E = t("button");
+  e(E, "slider-bar"),
+    E.setAttribute("id", "sliderBar2None"),
+    T.appendChild(E),
+    E.addEventListener("click", G);
   const O = t("span");
-  e(O, "span-bar-menu"), O.setAttribute("id", "span1"), A.appendChild(O);
-  const b = t("span");
-  e(b, "span-bar-menu2"), b.setAttribute("id", "span2"), A.appendChild(b);
+  e(O, "span-bar-menu"), O.setAttribute("id", "span1"), E.appendChild(O);
+  const H = t("span");
+  e(H, "span-bar-menu2"), H.setAttribute("id", "span2"), E.appendChild(H);
 }
-function q() {
-  const o = document.getElementById("globalMain"),
+function z() {
+  const i = document.getElementById("globalMain"),
     n = t("section");
-  e(n, "hero"), e(n, "container1"), o.appendChild(n);
-  const i = t("section");
-  e(i, "hero-container"), n.appendChild(i);
+  e(n, "hero"), e(n, "container1"), i.appendChild(n);
+  const o = t("section");
+  e(o, "hero-container"), n.appendChild(o);
   const s = t("article");
-  e(s, "christmas"), i.appendChild(s);
+  e(s, "christmas"), o.appendChild(s);
   const r = t("p");
   (r.innerText = "Merry Christmas"), s.appendChild(r);
   const l = t("article");
-  e(l, "heroH1"), i.appendChild(l);
+  e(l, "heroH1"), o.appendChild(l);
   const d = t("h1");
   (d.innerText = "GIFT"), l.appendChild(d);
   const p = t("h1");
@@ -198,26 +198,26 @@ function q() {
   const g = t("h1");
   (g.innerText = "NEW POSSIBILITIES"), l.appendChild(g);
   const m = t("article");
-  e(m, "button"), i.appendChild(m);
+  e(m, "button"), o.appendChild(m);
   const h = t("button");
   h.setAttribute("id", "button"),
     (h.innerText = "EXPLORE MAGICAL GIFTS"),
     h.addEventListener("click", D),
     m.appendChild(h);
   const y = t("article");
-  e(y, "christmas2"), i.appendChild(y);
+  e(y, "christmas2"), o.appendChild(y);
   const f = t("p");
   (f.innerText = "and Happy New Year"), y.appendChild(f);
 }
-const Q = "assets/santa-_rx7H_QE.png";
+const Q = "./assets/santa-_rx7H_QE.png";
 function $() {
-  const o = document.getElementById("globalMain"),
+  const i = document.getElementById("globalMain"),
     n =
       "This New Year marks the beginning of your journey. to inner harmony and new strengths. We offer unique gifts that will help you improve your life.",
-    i = t("section");
-  e(i, "about"), i.setAttribute("id", "about"), o.appendChild(i);
+    o = t("section");
+  e(o, "about"), o.setAttribute("id", "about"), i.appendChild(o);
   const s = t("section");
-  e(s, "about2"), i.appendChild(s);
+  e(s, "about2"), o.appendChild(s);
   const r = t("section");
   e(r, "about3"), s.appendChild(r);
   const l = t("section");
@@ -242,67 +242,67 @@ function $() {
     g.appendChild(m);
 }
 const Z = 200;
-let C = 0;
+let A = 0;
 const P = window.innerWidth;
-function G() {
-  const o = document.getElementById("styleLeftIndex"),
-    n = -C * Z;
-  o.style.transform = `translateX(${n}px)`;
+function W() {
+  const i = document.getElementById("styleLeftIndex"),
+    n = -A * Z;
+  i.style.transform = `translateX(${n}px)`;
 }
 function tt() {
-  const o = document.getElementById("buttonSliderLeft"),
+  const i = document.getElementById("buttonSliderLeft"),
     n = document.getElementById("buttonSliderRight");
-  C > 0 && ((C -= 1), G(), n.classList.remove("button-Right-none")),
-    C <= 0 && (console.log(C), o.classList.add("button-Left-none"));
+  A > 0 && ((A -= 1), W(), n.classList.remove("button-Right-none")),
+    A <= 0 && (console.log(A), i.classList.add("button-Left-none"));
 }
 function et() {
-  const o = document.getElementById("buttonSliderLeft"),
+  const i = document.getElementById("buttonSliderLeft"),
     n = document.getElementById("buttonSliderRight");
   P > 1330
-    ? C < 4 &&
-      ((C += 1),
-      G(),
-      o.classList.remove("button-Left-none"),
-      C === 4 && n.classList.add("button-Right-none"))
+    ? A < 4 &&
+      ((A += 1),
+      W(),
+      i.classList.remove("button-Left-none"),
+      A === 4 && n.classList.add("button-Right-none"))
     : P > 1120
-    ? C < 5 &&
-      ((C += 1),
-      G(),
-      o.classList.remove("button-Left-none"),
-      C === 5 && n.classList.add("button-Right-none"))
+    ? A < 5 &&
+      ((A += 1),
+      W(),
+      i.classList.remove("button-Left-none"),
+      A === 5 && n.classList.add("button-Right-none"))
     : P > 920
-    ? C < 6 &&
-      ((C += 1),
-      G(),
-      o.classList.remove("button-Left-none"),
-      C === 6 && n.classList.add("button-Right-none"))
+    ? A < 6 &&
+      ((A += 1),
+      W(),
+      i.classList.remove("button-Left-none"),
+      A === 6 && n.classList.add("button-Right-none"))
     : P < 920 && P > 360
-    ? C < 8 &&
-      ((C += 1),
-      G(),
-      o.classList.remove("button-Left-none"),
-      C === 8 && n.classList.add("button-Right-none"))
+    ? A < 8 &&
+      ((A += 1),
+      W(),
+      i.classList.remove("button-Left-none"),
+      A === 8 && n.classList.add("button-Right-none"))
     : P <= 360 &&
-      C < 9 &&
-      ((C += 1),
-      G(),
-      o.classList.remove("button-Left-none"),
-      C === 9 && n.classList.add("button-Right-none"));
+      A < 9 &&
+      ((A += 1),
+      W(),
+      i.classList.remove("button-Left-none"),
+      A === 9 && n.classList.add("button-Right-none"));
 }
 function nt() {
-  const o = document.getElementById("globalMain"),
+  const i = document.getElementById("globalMain"),
     n = t("section");
-  e(n, "slider"), o.appendChild(n);
-  const i = t("section");
-  e(i, "container-slider"), n.appendChild(i);
+  e(n, "slider"), i.appendChild(n);
+  const o = t("section");
+  e(o, "container-slider"), n.appendChild(o);
   const s = t("section");
-  e(s, "slider-title"), i.appendChild(s);
+  e(s, "slider-title"), o.appendChild(s);
   const r = t("h3");
   (r.innerText = "Become Happier!"), s.appendChild(r);
   const l = t("h2");
   (l.innerText = "IN THE NEW 2025"), s.appendChild(l);
   const d = t("section");
-  e(d, "slider-container-main"), i.appendChild(d);
+  e(d, "slider-container-main"), o.appendChild(d);
   const p = t("section");
   e(p, "slider2"), d.appendChild(p);
   const c = t("section");
@@ -324,35 +324,35 @@ function nt() {
   c.appendChild(f);
   const u = t("p");
   e(u, "text-slider"), (u.innerText = "CREATE"), f.appendChild(u);
-  const E = t("article");
-  c.appendChild(E);
-  const H = t("img");
-  e(H, "imagesSlider"),
-    H.setAttribute("src", "img/christmas-trees.jpg"),
-    H.setAttribute("alt", "Christmas Trees"),
-    E.appendChild(H);
-  const T = t("article");
-  c.appendChild(T);
-  const A = t("p");
-  e(A, "text-slider"), (A.innerText = "LOVE"), T.appendChild(A);
-  const O = t("article");
-  c.appendChild(O);
+  const C = t("article");
+  c.appendChild(C);
   const b = t("img");
   e(b, "imagesSlider"),
-    b.setAttribute("src", "img/christmas-tree-ball.png"),
-    b.setAttribute("alt", "Christmas Tree Ball"),
-    O.appendChild(b);
-  const S = t("article");
-  c.appendChild(S);
-  const x = t("p");
-  e(x, "text-slider"), (x.innerText = "DREAM"), S.appendChild(x);
+    b.setAttribute("src", "img/christmas-trees.jpg"),
+    b.setAttribute("alt", "Christmas Trees"),
+    C.appendChild(b);
+  const T = t("article");
+  c.appendChild(T);
+  const E = t("p");
+  e(E, "text-slider"), (E.innerText = "LOVE"), T.appendChild(E);
+  const O = t("article");
+  c.appendChild(O);
+  const H = t("img");
+  e(H, "imagesSlider"),
+    H.setAttribute("src", "img/christmas-tree-ball.png"),
+    H.setAttribute("alt", "Christmas Tree Ball"),
+    O.appendChild(H);
   const v = t("article");
   c.appendChild(v);
+  const M = t("p");
+  e(M, "text-slider"), (M.innerText = "DREAM"), v.appendChild(M);
+  const S = t("article");
+  c.appendChild(S);
   const F = t("img");
   e(F, "imagesSlider"),
     F.setAttribute("src", "img/fairytale-house.png"),
     F.setAttribute("alt", "Fairytale House"),
-    v.appendChild(F);
+    S.appendChild(F);
   const R = t("article");
   e(R, "button-slider"), d.appendChild(R);
   const I = t("button");
@@ -371,24 +371,24 @@ function nt() {
     e(B, "button-slider-main2"),
     B.addEventListener("click", et),
     R.appendChild(B);
-  const M = t("img");
-  M.setAttribute("src", "img/Vectorright.png"),
-    M.setAttribute("alt", "Vector"),
-    M.setAttribute("id", "vector2"),
-    B.appendChild(M);
+  const x = t("img");
+  x.setAttribute("src", "img/Vectorright.png"),
+    x.setAttribute("alt", "Vector"),
+    x.setAttribute("id", "vector2"),
+    B.appendChild(x);
 }
-function a(o, n, i, s, r) {
+function a(i, n, o, s, r) {
   const l = document.getElementById(r),
     d = t("section");
   e(d, "best-img"), l.appendChild(d);
   const p = t("article");
   d.appendChild(p);
   const c = t("img");
-  c.setAttribute("src", i), c.setAttribute("alt", "image1"), p.appendChild(c);
+  c.setAttribute("src", o), c.setAttribute("alt", "image1"), p.appendChild(c);
   const g = t("article");
   e(g, "best-h"), d.appendChild(g);
   const m = t("h4");
-  e(m, "best-h4"), e(m, s), (m.innerText = o), g.appendChild(m);
+  e(m, "best-h4"), e(m, s), (m.innerText = i), g.appendChild(m);
   const h = t("h3");
   e(h, "best-h3"), (h.innerText = n), g.appendChild(h);
 }
@@ -423,13 +423,13 @@ function at() {
   ot(), it(), st();
 }
 function rt() {
-  const o = document.getElementById("globalMain"),
+  const i = document.getElementById("globalMain"),
     n = t("section");
-  e(n, "best-Gifts"), n.setAttribute("id", "best-Gifts"), o.appendChild(n);
-  const i = t("section");
-  e(i, "best-Gifts2"), n.appendChild(i);
+  e(n, "best-Gifts"), n.setAttribute("id", "best-Gifts"), i.appendChild(n);
+  const o = t("section");
+  e(o, "best-Gifts2"), n.appendChild(o);
   const s = t("section");
-  e(s, "best-gifts-title"), i.appendChild(s);
+  e(s, "best-gifts-title"), o.appendChild(s);
   const r = t("article");
   s.appendChild(r);
   const l = t("h1");
@@ -439,7 +439,7 @@ function rt() {
   const p = t("section");
   e(p, "best-Gifts-conteiner"),
     p.setAttribute("id", "bestGiftsConteiner"),
-    i.appendChild(p),
+    o.appendChild(p),
     at();
 }
 class lt {
@@ -480,12 +480,12 @@ class lt {
   }
 }
 function dt() {
-  const o = document.getElementById("globalMain"),
+  const i = document.getElementById("globalMain"),
     n = new lt(),
-    i = t("section");
-  e(i, "CTA"), o.appendChild(i);
+    o = t("section");
+  e(o, "CTA"), i.appendChild(o);
   const s = t("section");
-  e(s, "cta-conteiner"), i.appendChild(s);
+  e(s, "cta-conteiner"), o.appendChild(s);
   const r = t("section");
   e(r, "title-sta-section"), s.appendChild(r);
   const l = t("h2");
@@ -516,24 +516,24 @@ function dt() {
   (f.innerText = "The New Year is Coming Soon..."), y.appendChild(f);
   const u = t("section");
   e(u, "time"), h.appendChild(u);
-  const E = t("article");
-  e(E, "sta-time1"), u.appendChild(E);
-  const H = t("p");
-  e(H, "timer"), H.setAttribute("id", "dey"), E.appendChild(H);
+  const C = t("article");
+  e(C, "sta-time1"), u.appendChild(C);
+  const b = t("p");
+  e(b, "timer"), b.setAttribute("id", "dey"), C.appendChild(b);
   const T = t("span");
-  T.setAttribute("id", "d"), H.appendChild(T);
-  const A = t("p");
-  e(A, "sta-deis"), (A.innerText = "DAYS"), E.appendChild(A);
+  T.setAttribute("id", "d"), b.appendChild(T);
+  const E = t("p");
+  e(E, "sta-deis"), (E.innerText = "DAYS"), C.appendChild(E);
   const O = t("span");
   e(O, "sta-span1"), u.appendChild(O);
-  const b = t("article");
-  e(b, "sta-time1"), u.appendChild(b);
-  const S = t("p");
-  e(S, "timer"), b.appendChild(S);
-  const x = t("span");
-  x.setAttribute("id", "h"), S.appendChild(x);
+  const H = t("article");
+  e(H, "sta-time1"), u.appendChild(H);
   const v = t("p");
-  e(v, "sta-deis"), (v.innerText = "HORS"), b.appendChild(v);
+  e(v, "timer"), H.appendChild(v);
+  const M = t("span");
+  M.setAttribute("id", "h"), v.appendChild(M);
+  const S = t("p");
+  e(S, "sta-deis"), (S.innerText = "HORS"), H.appendChild(S);
   const F = t("span");
   e(F, "sta-span1"), u.appendChild(F);
   const R = t("article");
@@ -544,8 +544,8 @@ function dt() {
   L.setAttribute("id", "m"), I.appendChild(L);
   const B = t("p");
   e(B, "sta-deis"), (B.innerText = "MINUTES"), R.appendChild(B);
-  const M = t("span");
-  e(M, "sta-span1"), u.appendChild(M);
+  const x = t("span");
+  e(x, "sta-span1"), u.appendChild(x);
   const w = t("article");
   e(w, "sta-time1"), u.appendChild(w);
   const k = t("p");
@@ -556,11 +556,11 @@ function dt() {
   e(N, "sta-deis"),
     (N.innerText = "SECONDS"),
     w.appendChild(N),
-    n.start(({ day: V, hours: X, minutes: z, seconds: J }) => {
+    n.start(({ day: V, hours: X, minutes: J, seconds: j }) => {
       (document.getElementById("d").textContent = V),
         (document.getElementById("h").textContent = X),
-        (document.getElementById("m").textContent = z),
-        (document.getElementById("s").textContent = J);
+        (document.getElementById("m").textContent = J),
+        (document.getElementById("s").textContent = j);
     });
 }
 function ct() {
@@ -650,13 +650,13 @@ function ct() {
     );
 }
 function pt() {
-  const o = document.getElementById("contentShop"),
+  const i = document.getElementById("contentShop"),
     n = t("section");
   e(n, "for-Harmony"),
     e(n, "conteiner-dest-magasin"),
     n.setAttribute("id", "forHarmony"),
     (n.style.display = "none"),
-    o.appendChild(n),
+    i.appendChild(n),
     ct();
 }
 function mt() {
@@ -734,13 +734,13 @@ function mt() {
     );
 }
 function gt() {
-  const o = document.getElementById("contentShop"),
+  const i = document.getElementById("contentShop"),
     n = t("section");
   e(n, "for-Health"),
     e(n, "conteiner-dest-magasin"),
     n.setAttribute("id", "forHealth"),
     (n.style.display = "none"),
-    o.appendChild(n),
+    i.appendChild(n),
     mt();
 }
 function ht() {
@@ -770,121 +770,124 @@ function ht() {
     );
 }
 function ut() {
-  const o = document.getElementById("contentShop"),
+  const i = document.getElementById("contentShop"),
     n = t("section");
   e(n, "for-Work"),
     e(n, "conteiner-dest-magasin"),
     n.setAttribute("id", "ForWork"),
     (n.style.display = "none"),
-    o.appendChild(n),
+    i.appendChild(n),
     ht();
 }
 function yt() {
-  const o = document.getElementById("shopItems"),
+  const i = document.getElementById("shopItems"),
     n = document.getElementById("ForWork"),
-    i = document.getElementById("forHealth"),
+    o = document.getElementById("forHealth"),
     s = document.getElementById("forHarmony");
-  o.style.display,
-    (o.style.display = "flex"),
+  i.style.display,
+    (i.style.display = "flex"),
     (n.style.display = "none"),
-    (i.style.display = "none"),
+    (o.style.display = "none"),
     (s.style.display = "none");
 }
 function ft() {
-  const o = document.getElementById("shopItems"),
+  const i = document.getElementById("shopItems"),
     n = document.getElementById("ForWork"),
-    i = document.getElementById("forHealth"),
+    o = document.getElementById("forHealth"),
     s = document.getElementById("forHarmony");
   n.style.display === "none"
     ? ((n.style.display = "flex"),
+      (i.style.display = "none"),
       (o.style.display = "none"),
-      (i.style.display = "none"),
       (s.style.display = "none"))
-    : ((o.style.display = "flex"),
+    : ((i.style.display = "flex"),
       (n.style.display = "none"),
-      (i.style.display = "none"),
+      (o.style.display = "none"),
       (s.style.display = "none"));
 }
 function bt() {
-  const o = document.getElementById("shopItems"),
+  const i = document.getElementById("shopItems"),
     n = document.getElementById("ForWork"),
-    i = document.getElementById("forHealth"),
+    o = document.getElementById("forHealth"),
     s = document.getElementById("forHarmony");
-  i.style.display === "none"
-    ? ((i.style.display = "flex"),
-      (o.style.display = "none"),
+  o.style.display === "none"
+    ? ((o.style.display = "flex"),
+      (i.style.display = "none"),
       (n.style.display = "none"),
       (s.style.display = "none"))
-    : ((o.style.display = "flex"),
+    : ((i.style.display = "flex"),
       (n.style.display = "none"),
-      (i.style.display = "none"),
+      (o.style.display = "none"),
       (s.style.display = "none"));
 }
 function Ct() {
-  const o = document.getElementById("shopItems"),
+  const i = document.getElementById("shopItems"),
     n = document.getElementById("ForWork"),
-    i = document.getElementById("forHealth"),
+    o = document.getElementById("forHealth"),
     s = document.getElementById("forHarmony");
   s.style.display === "none"
     ? ((s.style.display = "flex"),
-      (o.style.display = "none"),
-      (n.style.display = "none"),
-      (i.style.display = "none"))
-    : ((o.style.display = "flex"),
-      (n.style.display = "none"),
       (i.style.display = "none"),
+      (n.style.display = "none"),
+      (o.style.display = "none"))
+    : ((i.style.display = "flex"),
+      (n.style.display = "none"),
+      (o.style.display = "none"),
       (s.style.display = "none"));
 }
 function Ht() {
-  const o = document.getElementById("contentShop"),
+  const i = document.getElementById("contentShop"),
     n = t("section");
-  e(n, "hero-conteiner3"), o.appendChild(n);
-  const i = t("article");
-  e(i, "h12"), n.appendChild(i);
+  e(n, "hero-conteiner3"), i.appendChild(n);
+  const o = t("article");
+  e(o, "h12"), n.appendChild(o);
   const s = t("h1");
-  (s.innerText = "ACHIEVE HEALTH HARMONY, AND INNER STRENGTH"),
-    i.appendChild(s);
-  const r = t("article");
-  e(r, "contacts2"), n.appendChild(r);
-  const l = t("ul");
-  e(l, "ul-header"), r.appendChild(l);
-  const d = t("li");
-  e(d, "li-header"), e(d, "none-linc2"), l.appendChild(d);
-  const p = t("button");
-  e(p, "button-all"),
-    (p.innerText = "ALL"),
-    p.setAttribute("id", "buttonAll"),
-    p.addEventListener("click", yt),
-    d.appendChild(p);
+  (s.innerText = "ACHIEVE HEALTH HARMONY,"), o.appendChild(s);
+  const r = t("h1");
+  (r.innerText = "AND"), o.appendChild(r);
+  const l = t("h1");
+  (l.innerText = "INNER STRENGTH"), o.appendChild(l);
+  const d = t("article");
+  e(d, "contacts2"), n.appendChild(d);
+  const p = t("ul");
+  e(p, "ul-shop"), d.appendChild(p);
   const c = t("li");
-  e(c, "li-header2"), e(c, "li-a-header2"), l.appendChild(c);
+  e(c, "li-shop"), p.appendChild(c);
   const g = t("button");
-  e(g, "button-work"),
-    (g.innerText = "FOR WORK"),
-    g.setAttribute("id", "buttonWork"),
-    g.addEventListener("click", ft),
+  e(g, "button-all"),
+    (g.innerText = "ALL WORK"),
+    g.setAttribute("id", "buttonAll"),
+    g.addEventListener("click", yt),
     c.appendChild(g);
   const m = t("li");
-  e(m, "li-header2"), e(m, "li-a-header2"), l.appendChild(m);
+  e(m, "li-shop"), p.appendChild(m);
   const h = t("button");
-  e(h, "button-health"),
-    (h.innerText = "FOR HEALTH"),
-    h.setAttribute("id", "buttonHealth"),
-    h.addEventListener("click", bt),
+  e(h, "button-all"),
+    (h.innerText = "FOR WORK"),
+    h.setAttribute("id", "buttonWork"),
+    h.addEventListener("click", ft),
     m.appendChild(h);
   const y = t("li");
-  e(y, "li-header2"), e(y, "li-a-header2"), l.appendChild(y);
+  e(y, "li-shop"), p.appendChild(y);
   const f = t("button");
-  e(f, "button-harmony"),
-    (f.innerText = "FOR HARMONY"),
-    f.setAttribute("id", "buttonHarmony"),
-    f.addEventListener("click", Ct),
+  e(f, "button-all"),
+    (f.innerText = "FOR HEALTH"),
+    f.setAttribute("id", "buttonHealth"),
+    f.addEventListener("click", bt),
     y.appendChild(f);
-  const u = t("section");
-  e(u, "conteiner-dest-magasin"),
-    u.setAttribute("id", "shopItems"),
-    (u.style.display = "flex"),
-    o.appendChild(u);
+  const u = t("li");
+  e(u, "li-shop"), p.appendChild(u);
+  const C = t("button");
+  e(C, "button-all"),
+    (C.innerText = "FOR HARMONY"),
+    C.setAttribute("id", "buttonHarmony"),
+    C.addEventListener("click", Ct),
+    u.appendChild(C);
+  const b = t("section");
+  e(b, "conteiner-dest-magasin"),
+    b.setAttribute("id", "shopItems"),
+    (b.style.display = "flex"),
+    i.appendChild(b);
 }
 function At() {
   a("FOR WORK", "CONSOLE.LOG GURU", "img/image.svg", "for-work", "shopItems"),
@@ -1069,21 +1072,18 @@ function At() {
     );
 }
 function Et() {
-  const o = document.getElementById("main-pag"),
+  const i = document.getElementById("main-pag"),
     n = t("section");
   e(n, "best-Gifts3"),
-    e(n, "conteiner-best"),
-    e(n, "hero2"),
-    e(n, "conteiner3"),
     n.setAttribute("id", "bestGifts"),
     (n.style.display = "none"),
-    o.appendChild(n);
-  const i = t("section");
-  e(i, "best-Gifts2"), n.appendChild(i);
+    i.appendChild(n);
+  const o = t("section");
+  e(o, "best-Gifts-shop"), n.appendChild(o);
   const s = t("section");
   e(s, "best-Gifts-conteiner2"),
     s.setAttribute("id", "contentShop"),
-    i.appendChild(s),
+    o.appendChild(s),
     Ht(),
     At(),
     ut(),
@@ -1091,38 +1091,38 @@ function Et() {
     pt();
 }
 function Ot() {
-  const o = document.getElementById("main-pag"),
+  const i = document.getElementById("main-pag"),
     n = t("section");
   e(n, "about-page"),
     n.setAttribute("id", "aboutPage"),
     (n.style.display = "none"),
-    o.appendChild(n);
+    i.appendChild(n);
 }
 function Rt() {
-  const o = document.getElementById("main-pag"),
+  const i = document.getElementById("main-pag"),
     n = t("section");
   e(n, "best-gifts-page"),
     n.setAttribute("id", "bestGiftsPage"),
     (n.style.display = "none"),
-    o.appendChild(n);
+    i.appendChild(n);
 }
 function It() {
-  const o = document.getElementById("main-pag"),
+  const i = document.getElementById("main-pag"),
     n = t("section");
   e(n, "sectionContacts"),
     n.setAttribute("id", "sectionContacts"),
     (n.style.display = "none"),
-    o.appendChild(n);
+    i.appendChild(n);
 }
 function Tt() {
-  const o = document.getElementById("main-pag"),
+  const i = document.getElementById("main-pag"),
     n = t("section");
   n.setAttribute("id", "section-bar-menu"),
     e(n, "section-bar-menu"),
     e(n, "section-bar-menu-none"),
-    o.appendChild(n);
-  const i = t("ul");
-  e(i, "bar-menu"), n.appendChild(i);
+    i.appendChild(n);
+  const o = t("ul");
+  e(o, "bar-menu"), n.appendChild(o);
   const s = t("li");
   e(s, "li-header");
   const r = t("li");
@@ -1130,33 +1130,33 @@ function Tt() {
   const l = t("li");
   e(l, "li-header");
   const d = t("li");
-  e(d, "li-header"), i.append(s, r, l, d);
+  e(d, "li-header"), o.append(s, r, l, d);
   const p = t("button");
   e(p, "li-a-header"),
     (p.innerText = "GIFTS"),
     p.addEventListener("click", () => {
-      D(), W();
+      D(), G();
     }),
     s.appendChild(p);
   const c = t("button");
   e(c, "li-a-header"),
     (c.innerText = "ABOUT"),
     c.addEventListener("click", () => {
-      Y(), W();
+      Y(), G();
     }),
     r.appendChild(c);
   const g = t("button");
   e(g, "li-a-header"),
     (g.innerText = "BEST"),
     g.addEventListener("click", () => {
-      U(), W();
+      U(), G();
     }),
     l.appendChild(g);
   const m = t("button");
   e(m, "li-a-header"),
     (m.innerText = "CONTACTS"),
     m.addEventListener("click", () => {
-      _(), W();
+      _(), G();
     }),
     d.appendChild(m);
 }
@@ -1164,29 +1164,29 @@ function Bt() {
   Tt(), Lt(), Et(), Ot(), Rt(), It();
 }
 function Lt() {
-  const o = document.getElementById("main-pag"),
+  const i = document.getElementById("main-pag"),
     n = t("section");
   n.setAttribute("id", "globalMain"),
     (n.style.display = "flex"),
-    o.appendChild(n),
-    q(),
+    i.appendChild(n),
+    z(),
     $(),
     nt(),
     rt(),
     dt();
 }
-function St() {
-  const o = document.getElementById("contacts-footer"),
+function vt() {
+  const i = document.getElementById("contacts-footer"),
     n = t("section");
-  o.appendChild(n);
-  const i = t("section");
-  e(i, "footer-nav-conteiner"), n.appendChild(i);
+  i.appendChild(n);
+  const o = t("section");
+  e(o, "footer-nav-conteiner"), n.appendChild(o);
   const s = t("section");
-  e(s, "footer-nav"), i.appendChild(s);
+  e(s, "footer-nav"), o.appendChild(s);
   const r = t("section");
   e(r, "footer-cont"), s.appendChild(r);
   const l = t("img");
-  l.setAttribute("src", "img/GroupSANTA.svg"),
+  l.setAttribute("src", "/img/GroupSANTA.svg"),
     l.setAttribute("alt", "Group"),
     r.appendChild(l);
   const d = t("p");
@@ -1200,7 +1200,7 @@ function St() {
   const g = t("section");
   e(g, "footer-cont"), s.appendChild(g);
   const m = t("img");
-  m.setAttribute("src", "img/christmas-treeELCA.svg"),
+  m.setAttribute("src", "/img/christmas-treeELCA.svg"),
     m.setAttribute("alt", "Group"),
     g.appendChild(m);
   const h = t("p");
@@ -1217,50 +1217,50 @@ function St() {
   (f.innerText = "MEET US"), e(f, "footer-h3"), g.appendChild(f);
   const u = t("section");
   e(u, "footer-cont"), s.appendChild(u);
-  const E = t("img");
-  E.setAttribute("src", "img/GroupSNEICK.svg"),
-    E.setAttribute("alt", "Group"),
-    u.appendChild(E);
-  const H = t("p");
-  (H.innerText = "GIFTS@MAGIC.COM"), e(H, "footer-p"), u.appendChild(H);
+  const C = t("img");
+  C.setAttribute("src", "/img/GroupSNEICK.svg"),
+    C.setAttribute("alt", "Group"),
+    u.appendChild(C);
+  const b = t("p");
+  (b.innerText = "GIFTS@MAGIC.COM"), e(b, "footer-p"), u.appendChild(b);
   const T = t("a");
   e(T, "footer-a"),
     T.setAttribute("href", "mailto:gifts@magic.com"),
     u.appendChild(T);
-  const A = t("h3");
-  (A.innerText = "WRITE US"), e(A, "footer-h3"), u.appendChild(A);
+  const E = t("h3");
+  (E.innerText = "WRITE US"), e(E, "footer-h3"), u.appendChild(E);
   const O = t("section");
-  e(O, "footer-cont-img"), i.appendChild(O);
-  const b = t("article");
-  e(b, "media"), O.appendChild(b);
-  const S = t("a");
-  e(S, "footer-image"),
-    S.setAttribute("href", "https://telegram.org/"),
-    S.setAttribute("target", "_blank"),
-    b.appendChild(S);
-  const x = t("img");
-  x.setAttribute("src", "img/telegram.svg"),
-    x.setAttribute("alt", "Telegram"),
-    e(x, "telegram"),
-    S.appendChild(x);
+  e(O, "footer-cont-img"), o.appendChild(O);
+  const H = t("article");
+  e(H, "media"), O.appendChild(H);
   const v = t("a");
   e(v, "footer-image"),
-    v.setAttribute(
+    v.setAttribute("href", "https://telegram.org/"),
+    v.setAttribute("target", "_blank"),
+    H.appendChild(v);
+  const M = t("img");
+  M.setAttribute("src", "img/telegram.svg"),
+    M.setAttribute("alt", "Telegram"),
+    e(M, "telegram"),
+    v.appendChild(M);
+  const S = t("a");
+  e(S, "footer-image"),
+    S.setAttribute(
       "href",
       "https://ru-ru.facebook.com/login/device-based/regular/login/?login_attempt=1"
     ),
-    v.setAttribute("target", "_blank"),
-    b.appendChild(v);
+    S.setAttribute("target", "_blank"),
+    H.appendChild(S);
   const F = t("img");
   F.setAttribute("src", "img/facebook.svg"),
     F.setAttribute("alt", "facebook"),
     e(F, "facebook"),
-    v.appendChild(F);
+    S.appendChild(F);
   const R = t("a");
   e(R, "footer-image"),
     R.setAttribute("href", "https://www.instagram.com/"),
     R.setAttribute("target", "_blank"),
-    b.appendChild(R);
+    H.appendChild(R);
   const I = t("img");
   I.setAttribute("src", "img/instagram.svg"),
     I.setAttribute("alt", "insta"),
@@ -1270,16 +1270,16 @@ function St() {
   e(L, "footer-image"),
     L.setAttribute("href", "https://x.com/rollingscopes?mx=2"),
     L.setAttribute("target", "_blank"),
-    b.appendChild(L);
+    H.appendChild(L);
   const B = t("img");
   B.setAttribute("src", "img/X.svg"),
     B.setAttribute("alt", "RS"),
     e(B, "x"),
     L.appendChild(B);
-  const M = t("article");
-  O.appendChild(M);
+  const x = t("article");
+  O.appendChild(x);
   const w = t("p");
-  (w.innerText = "© Copyright 2025, All Rights Reserved"), M.appendChild(w);
+  (w.innerText = "© Copyright 2025, All Rights Reserved"), x.appendChild(w);
   const k = t("a");
   k.setAttribute("href", "https://rs.school/"),
     k.setAttribute("target", "_blank"),
@@ -1288,26 +1288,33 @@ function St() {
     (k.innerText = "Made in Rolling Scopes School"),
     O.appendChild(k);
 }
-function vt() {
-  const o = window.innerWidth,
+function St() {
+  const i = window.innerWidth,
     n = document.getElementById("openBar"),
-    i = document.getElementById("openWindowMenu");
-  o > 760
-    ? (n.classList.add("open"), i.classList.remove("open"))
-    : (i.classList.add("open"), n.classList.remove("open"));
+    o = document.getElementById("openWindowMenu");
+  i > 760
+    ? (n.classList.add("open"), o.classList.remove("open"))
+    : (o.classList.add("open"), n.classList.remove("open"));
 }
 function Ft() {
-  let o;
-  j(),
+  const i = document.getElementById("span1"),
+    n = document.getElementById("span2"),
+    o = document.getElementById("section-bar-menu");
+  i.classList.remove("span-bar-menu-click"),
+    n.classList.remove("span-bar-menu2-click"),
+    o.classList.add("section-bar-menu-none"),
+    document.body.classList.remove("bodyOverflow");
+}
+function Mt() {
+  q(),
     Bt(),
-    St(),
     vt(),
+    St(),
     console.log("hell"),
-    window.addEventListener("resize", () => {
-      clearTimeout(o),
-        (o = setTimeout(() => {
-          location.reload();
-        }, 2e3));
+    document.addEventListener("click", (i) => {
+      const n = document.getElementById("section-bar-menu"),
+        o = document.getElementById("sliderBar2None");
+      n && !n.contains(i.target) && o && !o.contains(i.target) && Ft();
     });
 }
-Ft();
+Mt();
