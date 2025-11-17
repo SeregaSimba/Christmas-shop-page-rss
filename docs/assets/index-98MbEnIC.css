@@ -1,9 +1,9 @@
 :root {
   --backgroundColor: #ff4646;
-  --sectionOnBacImg: url(./f4413900084b629c36d477332220830e-Cr-H4SiV-Cr-H4SiV.png);
-  --snowBackImg: url(./2dfc048014f1902a0c5cef20e2241de5-DnsHTlHm-DnsHTlHm.png);
-  --santaImg: url(./santa-_rx7H_QE.png);
-  --olenImg: url(./04957fcbcda39d1d47f087b8447ea5a8-Cmep4vKZ.png);
+  --sectionOnBacImg: url(../assets/f4413900084b629c36d477332220830e-Cr-H4SiV-Cr-H4SiV.png);
+  --snowBackImg: url(../assets/2dfc048014f1902a0c5cef20e2241de5-DnsHTlHm-DnsHTlHm.png);
+  --santaImg: url(../assets/santa-_rx7H_QE.png);
+  --olenImg: url(../assets/04957fcbcda39d1d47f087b8447ea5a8-Cmep4vKZ.png);
   --colorFontHero: #ffffff;
   --darkColor: #000000;
   --goldColor: #ffd700;
@@ -118,7 +118,7 @@ a {
 .hero2 {
   background-color: #ff4646;
   border-radius: 20px 20px 0 0;
-  background-image: url(./assets/bg-garland-BNq-a5rP.png);
+  background-image: url(/assets/bg-garland-BNq-a5rP.png);
   background-position: top;
   background-size: contain;
   padding: 40px 0;
