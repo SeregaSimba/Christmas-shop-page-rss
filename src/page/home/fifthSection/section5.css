@@ -41,6 +41,7 @@
 }
 
 .best-img {
+  border: none;
   background-color: var(--colorFontHero);
   border-radius: 20px;
   cursor: pointer;

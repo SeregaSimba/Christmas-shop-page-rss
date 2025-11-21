@@ -19,7 +19,9 @@ function CreateCatalogSection2() {
     "Posture Levitation",
     "img/image-2.svg",
     "for-health",
-    "bestGiftsConteiner"
+    "bestGiftsConteiner",
+    productCards2,
+    1
   );
 }
 
@@ -34,6 +36,7 @@ const productCards2 = [
     createPoint: "500",
     lovePoint: "500",
     dreamPoint: "400",
+    colorH2Fond: "#06a44f",
   },
   {
     id: 2,
@@ -45,6 +48,7 @@ const productCards2 = [
     createPoint: "300",
     lovePoint: "500",
     dreamPoint: "400",
+    colorH2Fond: "#06a44f",
   },
   {
     id: 3,
@@ -56,6 +60,7 @@ const productCards2 = [
     createPoint: "100",
     lovePoint: "200",
     dreamPoint: "400",
+    colorH2Fond: "#06a44f",
   },
   {
     id: 4,
@@ -68,6 +73,7 @@ const productCards2 = [
     createPoint: "300",
     lovePoint: "500",
     dreamPoint: "500",
+    colorH2Fond: "#06a44f",
   },
   {
     id: 5,
@@ -79,6 +85,7 @@ const productCards2 = [
     createPoint: "500",
     lovePoint: "500",
     dreamPoint: "500",
+    colorH2Fond: "#06a44f",
   },
   {
     id: 6,
@@ -91,6 +98,7 @@ const productCards2 = [
     createPoint: "300",
     lovePoint: "300",
     dreamPoint: "400",
+    colorH2Fond: "#06a44f",
   },
   {
     id: 7,
@@ -103,6 +111,7 @@ const productCards2 = [
     createPoint: "300",
     lovePoint: "500",
     dreamPoint: "400",
+    colorH2Fond: "#06a44f",
   },
   {
     id: 8,
@@ -114,6 +123,7 @@ const productCards2 = [
     createPoint: "400",
     lovePoint: "200",
     dreamPoint: "400",
+    colorH2Fond: "#06a44f",
   },
   {
     id: 9,
@@ -125,6 +135,7 @@ const productCards2 = [
     createPoint: "400",
     lovePoint: "400",
     dreamPoint: "400",
+    colorH2Fond: "#06a44f",
   },
   {
     id: 10,
@@ -136,6 +147,7 @@ const productCards2 = [
     createPoint: "300",
     lovePoint: "200",
     dreamPoint: "400",
+    colorH2Fond: "#06a44f",
   },
   {
     id: 11,
@@ -147,6 +159,7 @@ const productCards2 = [
     createPoint: "500",
     lovePoint: "500",
     dreamPoint: "400",
+    colorH2Fond: "#06a44f",
   },
   {
     id: 12,
@@ -158,6 +171,7 @@ const productCards2 = [
     createPoint: "300",
     lovePoint: "500",
     dreamPoint: "200",
+    colorH2Fond: "#06a44f",
   },
 ];
 

@@ -22,4 +22,5 @@ function CloseBarMenu() {
   sectionBarMenu.classList.add("section-bar-menu-none");
   document.body.classList.remove("bodyOverflow");
 }
+
 export { OpenBarMenu, CloseBarMenu };

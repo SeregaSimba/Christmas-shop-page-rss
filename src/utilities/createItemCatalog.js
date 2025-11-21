@@ -1,11 +1,25 @@
 import { createEll, addClass } from "../utilities/createFunc";
+import { ProductCards } from "../components/productСards/productСards";
 
-function CreateCatalog(text, text2, srcImg, className, id) {
+function CreateCatalog(text, text2, srcImg, className, id, section, idItems) {
   const containerCatalog = document.getElementById(id);
 
-  const sectionItem = createEll("section");
+  const sectionItem = createEll("button");
   addClass(sectionItem, "best-img");
   containerCatalog.appendChild(sectionItem);
+
+  function createItemCart() {
+    ProductCards(section, idItems);
+  }
+
+  sectionItem.addEventListener("click", () => {
+    const containerSectionCards = document.getElementById(
+      "containerSectionCards"
+    );
+    containerSectionCards.classList.add("containerSectionCards");
+    containerSectionCards.innerHTML = "";
+    createItemCart();
+  });
 
   const articleItemImg = createEll("article");
   sectionItem.appendChild(articleItemImg);

@@ -9,14 +9,18 @@ import { AboutPage } from "../../about/about";
 import { BestGiftsPage } from "../../bestGifts/bestGifts";
 import { ContactsPage } from "../../contacts/contacts";
 import { BarMenu } from "../../../components/barMenu/barMenu";
-import { ProductCards } from "../../../components/productСards/productСards";
+import {
+  ProductCards,
+  createContainerCart,
+} from "../../../components/productСards/productСards";
+
 import { productCards1 } from "../../../components/content/catalig/firstCatalog";
 import { productCards2 } from "../../../components/content/catalig/secondCatalog";
 import { productCards3 } from "../../../components/content/catalig/thirdCatalog";
 
 function Main() {
   BarMenu();
-  ProductCards(productCards1, 1);
+  createContainerCart();
   SectionMainPag();
   ShopSection();
   AboutPage();

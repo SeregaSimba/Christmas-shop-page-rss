@@ -1,9 +1,19 @@
 import { createEll, addClass } from "../../utilities/createFunc";
+import { buttonClose } from "../../utilities/buttonShop";
 
 import "./productCards.css";
 
-function ProductCards(product, id) {
+function createContainerCart() {
   const main = document.getElementById("main-pag");
+
+  const containerSectionCards = createEll("section");
+  containerSectionCards.id = "containerSectionCards";
+  // addClass(containerSectionCards, "cards-close");
+  main.appendChild(containerSectionCards);
+}
+
+function ProductCards(product, id) {
+  const main = document.getElementById("containerSectionCards");
   const result = product.find((trim) => {
     return trim.id === id;
   });
@@ -33,6 +43,7 @@ function ProductCards(product, id) {
   const starDream = starOpa("dream");
 
   const sectionCards = createEll("section");
+  sectionCards.id = "sectionCards";
   addClass(sectionCards, "section-cards");
   main.appendChild(sectionCards);
 
@@ -42,7 +53,16 @@ function ProductCards(product, id) {
 
   const buttonCloseCarts = createEll("button");
   addClass(buttonCloseCarts, "buttonCloseCarts");
+  buttonCloseCarts.addEventListener("click", buttonClose);
   containerImg.appendChild(buttonCloseCarts);
+
+  const spanButtonIcon1 = createEll("span");
+  addClass(spanButtonIcon1, "spanButtonIcon1");
+  buttonCloseCarts.appendChild(spanButtonIcon1);
+
+  const spanButtonIcon2 = createEll("span");
+  addClass(spanButtonIcon2, "spanButtonIcon2");
+  buttonCloseCarts.appendChild(spanButtonIcon2);
 
   const cardsImg = createEll("img");
   addClass(cardsImg, "cardsImg");
@@ -56,6 +76,7 @@ function ProductCards(product, id) {
   const titleCartsH2 = createEll("h2");
   addClass(titleCartsH2, "titleCartsH2");
   titleCartsH2.innerText = result?.nameSection;
+  titleCartsH2.style.color = result?.colorH2Fond;
   containerTitleCart.appendChild(titleCartsH2);
 
   const titleCartsH1 = createEll("h1");
@@ -87,7 +108,7 @@ function ProductCards(product, id) {
 
   const liveP = createEll("p");
   addClass(liveP, "liveP");
-  liveP.innerText = "live";
+  liveP.innerText = "Live";
   articleLiveP.appendChild(liveP);
 
   const liveP2 = createEll("p");
@@ -111,7 +132,7 @@ function ProductCards(product, id) {
 
   const createP = createEll("p");
   addClass(createP, "createP");
-  createP.innerText = "create";
+  createP.innerText = "Create";
   articleCreateP.appendChild(createP);
 
   const createP2 = createEll("p");
@@ -135,7 +156,7 @@ function ProductCards(product, id) {
 
   const loveP = createEll("p");
   addClass(loveP, "loveP");
-  loveP.innerText = "love";
+  loveP.innerText = "Love";
   articleLoveP.appendChild(loveP);
 
   const loveP2 = createEll("p");
@@ -159,7 +180,7 @@ function ProductCards(product, id) {
 
   const dreamP = createEll("p");
   addClass(dreamP, "dreamP");
-  dreamP.innerText = "dream";
+  dreamP.innerText = "Dream";
   articleDreamP.appendChild(dreamP);
 
   const dreamP2 = createEll("p");
@@ -174,4 +195,4 @@ function ProductCards(product, id) {
   addClassOPa(result?.dreamPoint, "dream", "dreamOp1");
 }
 
-export { ProductCards };
+export { ProductCards, createContainerCart };

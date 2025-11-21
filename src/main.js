@@ -23,12 +23,15 @@ function app() {
   document.addEventListener("click", (event) => {
     const sectionBarMenu = document.getElementById("section-bar-menu");
     const buttonMenuBar = document.getElementById("sliderBar2None");
+    const buttonClose = document.getElementById("containerSectionCards");
 
     if (
       sectionBarMenu &&
       !sectionBarMenu.contains(event.target) &&
       buttonMenuBar &&
-      !buttonMenuBar.contains(event.target)
+      !buttonMenuBar.contains(event.target) &&
+      buttonClose &&
+      !buttonClose.contains(event.target)
     ) {
       CloseBarMenu();
     }

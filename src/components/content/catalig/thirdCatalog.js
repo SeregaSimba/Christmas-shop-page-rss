@@ -19,7 +19,9 @@ function CreateCatalogSection3() {
     "Joy Charger",
     "img/image-3.svg",
     "for-harmony",
-    "bestGiftsConteiner"
+    "bestGiftsConteiner",
+    productCards3,
+    1
   );
 }
 
@@ -35,6 +37,7 @@ const productCards3 = [
     createPoint: "200",
     lovePoint: "500",
     dreamPoint: "500",
+    colorH2Fond: "#ff43f7",
   },
   {
     id: 2,
@@ -46,6 +49,7 @@ const productCards3 = [
     createPoint: "200",
     lovePoint: "500",
     dreamPoint: "500",
+    colorH2Fond: "#ff43f7",
   },
   {
     id: 3,
@@ -58,6 +62,7 @@ const productCards3 = [
     createPoint: "200",
     lovePoint: "500",
     dreamPoint: "400",
+    colorH2Fond: "#ff43f7",
   },
   {
     id: 4,
@@ -70,6 +75,7 @@ const productCards3 = [
     createPoint: "200",
     lovePoint: "500",
     dreamPoint: "400",
+    colorH2Fond: "#ff43f7",
   },
   {
     id: 5,
@@ -82,6 +88,7 @@ const productCards3 = [
     createPoint: "200",
     lovePoint: "300",
     dreamPoint: "500",
+    colorH2Fond: "#ff43f7",
   },
   {
     id: 6,
@@ -94,6 +101,7 @@ const productCards3 = [
     createPoint: "200",
     lovePoint: "400",
     dreamPoint: "100",
+    colorH2Fond: "#ff43f7",
   },
   {
     id: 7,
@@ -105,6 +113,7 @@ const productCards3 = [
     createPoint: "200",
     lovePoint: "500",
     dreamPoint: "500",
+    colorH2Fond: "#ff43f7",
   },
   {
     id: 8,
@@ -116,6 +125,7 @@ const productCards3 = [
     createPoint: "200",
     lovePoint: "500",
     dreamPoint: "500",
+    colorH2Fond: "#ff43f7",
   },
   {
     id: 9,
@@ -128,6 +138,7 @@ const productCards3 = [
     createPoint: "200",
     lovePoint: "200",
     dreamPoint: "500",
+    colorH2Fond: "#ff43f7",
   },
   {
     id: 10,
@@ -139,6 +150,7 @@ const productCards3 = [
     createPoint: "200",
     lovePoint: "100",
     dreamPoint: "100",
+    colorH2Fond: "#ff43f7",
   },
   {
     id: 11,
@@ -151,6 +163,7 @@ const productCards3 = [
     createPoint: "200",
     lovePoint: "500",
     dreamPoint: "500",
+    colorH2Fond: "#ff43f7",
   },
   {
     id: 12,
@@ -162,6 +175,7 @@ const productCards3 = [
     createPoint: "200",
     lovePoint: "300",
     dreamPoint: "200",
+    colorH2Fond: "#ff43f7",
   },
 ];
 

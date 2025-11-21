@@ -74,4 +74,10 @@ function ButtonHarmony() {
   }
 }
 
-export { ButtonAll, ButtonWork, ButtonHealth, ButtonHarmony };
+function buttonClose() {
+  const sectionCards = document.getElementById("containerSectionCards");
+  sectionCards.classList.remove("containerSectionCards");
+  sectionCards.innerHTML = "";
+}
+
+export { ButtonAll, ButtonWork, ButtonHealth, ButtonHarmony, buttonClose };

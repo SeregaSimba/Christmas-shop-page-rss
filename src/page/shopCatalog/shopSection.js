@@ -25,10 +25,11 @@ function ShopSection() {
   sectionShopContainer.appendChild(sectionContentShop);
 
   ShopSectionTitle();
-  CreateItemsShop();
+
   ForWork();
   ForHealth();
   ForHarmony();
+  CreateItemsShop();
 }
 
 export { ShopSection };
