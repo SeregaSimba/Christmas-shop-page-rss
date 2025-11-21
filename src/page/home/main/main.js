@@ -1,7 +1,6 @@
 import { FirstSection } from "../firstSection/firstSection";
 import { TwoSection } from "../twoSection/twoSection";
 import { ThirdSection } from "../thirdSection/thirdSection";
-import { FourthSection } from "../fourthSection/fourthSection";
 import { FifthSection } from "../fifthSection/fifthSection";
 import { SixthSection } from "../sixthSection/sixthSection";
 import { createEll } from "../../../components/header/header";
@@ -10,9 +9,14 @@ import { AboutPage } from "../../about/about";
 import { BestGiftsPage } from "../../bestGifts/bestGifts";
 import { ContactsPage } from "../../contacts/contacts";
 import { BarMenu } from "../../../components/barMenu/barMenu";
+import { ProductCards } from "../../../components/productСards/productСards";
+import { productCards1 } from "../../../components/content/catalig/firstCatalog";
+import { productCards2 } from "../../../components/content/catalig/secondCatalog";
+import { productCards3 } from "../../../components/content/catalig/thirdCatalog";
 
 function Main() {
   BarMenu();
+  ProductCards(productCards1, 1);
   SectionMainPag();
   ShopSection();
   AboutPage();
@@ -30,7 +34,6 @@ function SectionMainPag() {
   FirstSection();
   TwoSection();
   ThirdSection();
-  // FourthSection();
   FifthSection();
   SixthSection();
 }
