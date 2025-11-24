@@ -217,3 +217,9 @@
 .dreamOp1 {
   opacity: 1;
 }
+
+@media (max-width: 470px) {
+  .section-cards {
+    width: auto;
+  }
+}

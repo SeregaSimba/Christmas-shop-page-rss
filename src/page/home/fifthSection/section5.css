@@ -46,9 +46,6 @@
   border-radius: 20px;
   cursor: pointer;
   letter-spacing: 2px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
   flex-shrink: 1;
   transition: 2s;
 }

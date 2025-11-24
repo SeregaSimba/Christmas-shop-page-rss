@@ -558,6 +558,11 @@ a {
 .dreamOp1 {
   opacity: 1;
 }
+@media (max-width: 470px) {
+  .section-cards {
+    width: auto;
+  }
+}
 .best-Gifts {
   background-image: var(--snowBackImg);
   background-color: var(--backgroundColor);
@@ -601,9 +606,6 @@ a {
   border-radius: 20px;
   cursor: pointer;
   letter-spacing: 2px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
   flex-shrink: 1;
   transition: 2s;
 }
